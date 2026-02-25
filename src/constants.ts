@@ -67,20 +67,20 @@ export const CATEGORIES: Category[] = [
           { 
             id: 'nurse-station-display', 
             name: 'Nurse Station Display', 
-            description: 'Central monitoring unit for all calls.', 
+            description: 'Wireless central monitoring unit for all calls.', 
             image: '/images/products/wireless-nurse-station-display.jpg',
             features: [
               'Real-time call monitoring',
               'Visual and audible alerts',
-              'Staff presence tracking',
+              'Custom registration of call points',
               'Emergency call prioritization'
             ],
             specs: {
-              'Screen': '7-inch Touchscreen LCD',
-              'Resolution': '1024 x 600',
-              'Connectivity': 'WiFi 802.11 b/g/n',
-              'Power': '12V DC / 2A',
-              'Dimensions': '210 x 140 x 30 mm'
+              'Screen': '7 Segment LED Screen',
+              'Dimensions': '480x170x58mm',
+              'Connection': 'RF Frequency',
+              'Range': '150 Meters (open space 200 meters)',
+              'Power': '220V'
             }
           },
           { 
