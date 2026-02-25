@@ -68,26 +68,28 @@ export const CATEGORIES: Category[] = [
             id: 'nurse-station-display', 
             name: 'Nurse Station Display', 
             description: 'Central monitoring unit for all calls.', 
-            image: '/images/products/nurse-station-display.jpg',
+            image: '/images/products/wireless-nurse-station-display.jpg',
             features: [
               'Real-time call monitoring',
               'Visual and audible alerts',
-              'Staff presence tracking',
+              'Support up to 128 call devices',
               'Emergency call prioritization'
             ],
             specs: {
-              'Screen': '7-inch Touchscreen LCD',
-              'Resolution': '1024 x 600',
-              'Connectivity': 'WiFi 802.11 b/g/n',
-              'Power': '12V DC / 2A',
-              'Dimensions': '210 x 140 x 30 mm'
+              'Material': 'ABS Black Plastic',
+              'Screen': '7 Segment LED Display',
+              'Call Devices': '128 call devices can be used',
+              'Connection': 'RF',
+              'Power': '220V',
+              'Weight': '1380g',
+              'Dimensions': '480 x 170 x 58 mm'
             }
           },
           { 
             id: 'nurse-call-button', 
             name: 'Nurse Call Button', 
             description: 'Standard patient call unit.', 
-            image: '/images/products/nurse-call-button.jpg',
+            image: '/images/products/wireless-nurse-call-button.jpg',
             features: [
               'Antimicrobial surface',
               'Braille embossed button',
@@ -95,20 +97,157 @@ export const CATEGORIES: Category[] = [
               'Easy wall mounting'
             ],
             specs: {
-              'Material': 'Antimicrobial ABS',
-              'Frequency': '433.92 MHz',
+              'Material': 'ABS White Plastic',
+              'Frequency': '433.3 MHz',
               'Range': 'Up to 100m (Open area)',
-              'Battery': 'CR2450 Lithium',
-              'Dimensions': '86 x 86 x 15 mm'
+              'Battery': 'CR2032 Lithium',
+              'Weight': '70g',
+              'Dimensions': '84 x 84 x 33 mm'
             }
           },
-          { id: 'handset-call-button', name: 'Handset Call Button', description: 'Ergonomic patient handset.', image: '/images/products/handset-call-button.jpg' },
-          { id: 'pullcord-call-button', name: 'Pullcord Call Button', description: 'Emergency pull cord for bathrooms.', image: '/images/products/pullcord-call-button.jpg' },
-          { id: 'codeblue-call-button', name: 'Codeblue Call Button', description: 'Critical emergency alert button.', image: '/images/products/codeblue-call-button.jpg' },
-          { id: 'over-door-lamp', name: 'Over Door Lamp', description: 'Visual indicator for room status.', image: '/images/products/over-door-lamp.jpg' },
-          { id: 'signal-repeater', name: 'Signal Repeater', description: 'Extends wireless coverage.', image: '/images/products/signal-repeater.jpg' },
-          { id: 'pager-transmitter', name: 'Pager Transmitter', description: 'Sends alerts to staff pagers.', image: '/images/products/pager-transmitter.jpg' },
-          { id: 'pager', name: 'Pager', description: 'Personal alert device for staff.', image: '/images/products/pager.jpg' },
+          { id: 'handset-call-button', 
+            name: 'Handset Call Button', 
+            description: 'Ergonomic patient handset.', 
+            image: '/images/products/wireless-handset-call-button.jpg',
+            features: [
+              'Antimicrobial surface',
+              '1,5m spiral cable for easier use',
+              'LED call confirmation',
+              'Easy wall mounting with socket'
+            ],
+            specs: {
+              'Material': 'ABS White Plastic',
+              'Frequency': '433.3 MHz',
+              'Range': 'Up to 100m (Open area)',
+              'Power': 'Connected to Bedside Button',
+              'Weight': '92g',
+              'Dimensions': '44 x 131 x 24 mm'
+            }
+          },
+          { id: 'pullcord-call-button',
+           name: 'Pullcord Call Button',
+           description: 'Emergency pull cord for bathrooms.',
+           image: '/images/products/wireless-pullcord-call-button.jpg',
+           features: [
+              'Antimicrobial surface',
+              'Pull Cord for easier patient use',
+              'Buttons on casing for call and reset functions',
+              'LED call confirmation',
+              'Easy wall mounting'
+            ],
+            specs: {
+              'Material': 'ABS White Plastic',
+              'Frequency': '433.3 MHz',
+              'Range': 'Up to 100m (Open area)',
+              'Battery': 'CR2032 Lithium',
+              'Weight': '88g',
+              'Dimensions': '84 x 84 x 33 mm'
+            }
+          },
+          { id: 'codeblue-call-button',
+           name: 'Codeblue Call Button',
+           description: 'Critical emergency alert button.',
+           image: '/images/products/wireless-codeblue-call-button.jpg',
+           features: [
+              'Antimicrobial surface',
+              'One button circular casing',
+              'Easy to use',
+              'LED call confirmation',
+              'Easy wall mounting'
+            ],
+            specs: {
+              'Material': 'ABS White Plastic',
+              'Frequency': '433.3 MHz',
+              'Range': 'Up to 100m (Open area)',
+              'Battery': 'CR2032 Lithium',
+              'Weight': '40g',
+              'Dimensions': '75 x 75 x 22 mm'
+            }
+          
+          },
+          { id: 'over-door-lamp',
+           name: 'Over Door Lamp',
+           description: 'Visual indicator for room status.',
+           image: '/images/products/wireless-over-door-lamp.jpg',
+           features: [
+              'High quality ABS Plastic Casing',
+              '4 Type Color Option',
+              'Easy to Spot',
+              'Audio Alert with Each Call',
+              'Easy wall mounting'
+            ],
+            specs: {
+              'Material': 'ABS White Plastic',
+              'Frequency': '433.3 MHz',
+              'Range': 'Up to 100m (Open area)',
+              'Power': '220V',
+              'Weight': '140g',
+              'Dimensions': '85 x 85 x 38 mm'
+            }
+          
+          },
+          { id: 'signal-repeater',
+           name: 'Signal Repeater',
+           description: 'Extends wireless coverage.',
+           image: '/images/products/wireless-signal-repeater.jpg',
+           features: [
+              'Extends communication range',
+              'No interference with other networks',
+              'Easy to use',
+              'LED call confirmation for calls that are received',
+              'Easy wall mounting'
+            ],
+            specs: {
+              'Material': 'ABS White Plastic',
+              'Frequency': '433.3 MHz',
+              'Range': 'Up to 100m (Open area)',
+              'Power': '220V',
+              'Weight': '140g',
+              'Dimensions': '85 x 85 x 38 mm'
+            }
+          
+          },
+          { id: 'pager-transmitter', 
+            name: 'Pager Transmitter',
+            description: 'Sends alerts to staff pagers.',
+            image: '/images/products/wireless-pager-transmitter.jpg',
+           features: [
+              'Antenna for long range',
+              'RS232 Communication',
+              'Easy to use',
+              'LED status confirmation',
+              'Easy wall mounting'
+            ],
+            specs: {
+              'Material': 'Aluminum Alloy',
+              'Frequency': '433.3 MHz',
+              'Range': 'Up to 100m (Open area)',
+              'Power': '220V using power supply with transmitter',
+              'Weight': '230g',
+              'Dimensions': '84 x 97 x 24 mm'
+            }
+          
+          },
+          { id: 'pager',
+            name: 'Pager',
+            description: 'Personal alert device for staff.',
+            image: '/images/products/wireless-pager.jpg',
+           features: [
+              'Loud alerts for calls',
+              '16 character call notification',
+              'Multiple language support',
+              'Easy to use',
+              'Easy wall mounting'
+            ],
+            specs: {
+              'Material': 'ABS Black Plastic',
+              'Frequency': '433.3 MHz',
+              'Range': 'Up to 150m (Open area)',
+              'Battery': '1.5V AAA',
+              'Weight': '68g',
+              'Dimensions': '76 x 53 x 18 mm'
+            }
+          },
         ]
       },
       {
