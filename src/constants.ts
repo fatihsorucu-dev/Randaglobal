@@ -25,10 +25,10 @@ export const CONTACT_INFO = {
 };
 
 export const SOCIAL_LINKS = {
-  facebook: 'https://facebook.com/randatechnology',
-  linkedin: 'https://linkedin.com/company/randatechnology',
-  youtube: 'https://youtube.com/randatechnology',
-  instagram: 'https://instagram.com/randatechnology'
+  facebook: 'https://www.facebook.com/randaelectronic',
+  linkedin: 'https://www.linkedin.com/in/randaelektronik/',
+  youtube: 'https://www.youtube.com/channel/UCojcZEItPn0gPH7adu1iCyQ',
+  instagram: 'https://www.instagram.com/randaelektronik/'
 };
 
 export const DOCUMENTS: DocumentItem[] = [
