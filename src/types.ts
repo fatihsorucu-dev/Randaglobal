@@ -30,3 +30,18 @@ export interface NavItem {
   path: string;
   children?: { label: string; path: string }[];
 }
+
+export interface DocumentItem {
+  id: string;
+  title: string;
+  url: string;
+  type: 'pdf' | 'doc' | 'image';
+}
+
+export interface ReferenceItem {
+  id: string;
+  name: string;
+  location: string;
+  category: string;
+  logo?: string;
+}

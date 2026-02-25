@@ -53,10 +53,18 @@ export default function About() {
               past two decades, we have evolved from a small R&D boutique to a 
               globally recognized manufacturer.
             </p>
+            <p className="text-lg text-zinc-600 mb-6 leading-relaxed">
+              Our expertise lies in the development of sophisticated communication 
+              infrastructures that ensure safety and efficiency in healthcare, 
+              hospitality, and industrial sectors. We take pride in our in-house 
+              R&D capabilities, allowing us to stay ahead of industry trends and 
+              deliver bespoke solutions to our clients.
+            </p>
             <p className="text-lg text-zinc-600 leading-relaxed">
               Our registered trademark, <strong>Digimat</strong>, has become 
               synonymous with reliability in hospitals, nursing homes, and 
-              public facilities across multiple continents.
+              public facilities across multiple continents. We are committed to 
+              continuous improvement and excellence in everything we do.
             </p>
           </div>
         </div>

@@ -104,7 +104,36 @@ export default function Navbar() {
               </div>
             ))}
             
-            <Link to="/about" className="px-4 py-2 text-sm font-medium text-zinc-600 hover:text-randa-blue transition-colors">About</Link>
+            {/* Corporate Dropdown */}
+            <div 
+              className="relative group"
+              onMouseEnter={() => setActiveDropdown('corporate')}
+              onMouseLeave={() => setActiveDropdown(null)}
+            >
+              <button className="px-4 py-2 text-sm font-medium text-zinc-600 hover:text-randa-blue flex items-center space-x-1 transition-colors">
+                <span>Corporate</span>
+                <ChevronDown className="w-4 h-4 opacity-50" />
+              </button>
+              
+              <AnimatePresence>
+                {activeDropdown === 'corporate' && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    className="absolute left-0 mt-0 w-48 bg-white shadow-xl border border-zinc-100 rounded-xl overflow-hidden"
+                  >
+                    <div className="p-2">
+                      <Link to="/about" className="block px-4 py-2 text-sm text-zinc-600 hover:bg-stone-50 hover:text-randa-blue rounded-lg">About Us</Link>
+                      <Link to="/career" className="block px-4 py-2 text-sm text-zinc-600 hover:bg-stone-50 hover:text-randa-blue rounded-lg">Career</Link>
+                      <Link to="/documents" className="block px-4 py-2 text-sm text-zinc-600 hover:bg-stone-50 hover:text-randa-blue rounded-lg">Documents</Link>
+                      <Link to="/references" className="block px-4 py-2 text-sm text-zinc-600 hover:bg-stone-50 hover:text-randa-blue rounded-lg">References</Link>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
             <Link to="/contact" className="ml-4 px-5 py-2.5 bg-randa-blue text-white rounded-full text-sm font-semibold hover:bg-randa-blue/90 transition-all shadow-lg shadow-randa-blue/20 flex items-center space-x-2">
               <Phone className="w-4 h-4" />
               <span>Contact Us</span>
@@ -147,8 +176,14 @@ export default function Navbar() {
                   ))}
                 </div>
               ))}
+              <div className="py-2">
+                <div className="text-xs font-bold text-zinc-400 uppercase tracking-widest px-3 mb-1">Corporate</div>
+                <Link to="/about" className="block px-3 py-2 text-base font-medium text-zinc-600 hover:text-randa-blue hover:bg-stone-50 rounded-lg">About Us</Link>
+                <Link to="/career" className="block px-3 py-2 text-base font-medium text-zinc-600 hover:text-randa-blue hover:bg-stone-50 rounded-lg">Career</Link>
+                <Link to="/documents" className="block px-3 py-2 text-base font-medium text-zinc-600 hover:text-randa-blue hover:bg-stone-50 rounded-lg">Documents</Link>
+                <Link to="/references" className="block px-3 py-2 text-base font-medium text-zinc-600 hover:text-randa-blue hover:bg-stone-50 rounded-lg">References</Link>
+              </div>
               <div className="pt-4 border-t border-zinc-100">
-                <Link to="/about" className="block px-3 py-2 text-base font-medium text-zinc-600">About Us</Link>
                 <Link to="/contact" className="block px-3 py-2 text-base font-bold text-randa-blue">Contact Us</Link>
               </div>
             </div>

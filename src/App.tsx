@@ -9,6 +9,9 @@ import Subcategory from './pages/Subcategory';
 import ProductDetail from './pages/ProductDetail';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Career from './pages/Career';
+import Documents from './pages/Documents';
+import References from './pages/References';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -21,6 +24,9 @@ function AnimatedRoutes() {
         <Route path="/category/:categoryId/subcategory/:subcategoryId" element={<Subcategory />} />
         <Route path="/category/:categoryId/subcategory/:subcategoryId/product/:productId" element={<ProductDetail />} />
         <Route path="/about" element={<About />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/documents" element={<Documents />} />
+        <Route path="/references" element={<References />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </AnimatePresence>

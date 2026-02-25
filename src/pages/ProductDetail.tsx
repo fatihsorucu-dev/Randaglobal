@@ -70,50 +70,76 @@ export default function ProductDetail() {
             </p>
 
             <div className="space-y-8 mb-12">
-              <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 shrink-0">
-                  <Zap className="w-5 h-5" />
+              {product.features?.map((feature, idx) => (
+                <div key={idx} className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 shrink-0">
+                    <CheckCircle2 className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <p className="text-zinc-700 font-medium">{feature}</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-bold text-zinc-900">High Efficiency</h4>
-                  <p className="text-sm text-zinc-500">Optimized power consumption and rapid response times.</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 shrink-0">
-                  <Settings className="w-5 h-5" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-zinc-900">Easy Integration</h4>
-                  <p className="text-sm text-zinc-500">Plug-and-play compatibility with all Digimat systems.</p>
-                </div>
-              </div>
+              )) || (
+                <>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 shrink-0">
+                      <Zap className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-zinc-900">High Efficiency</h4>
+                      <p className="text-sm text-zinc-500">Optimized power consumption and rapid response times.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-10 h-10 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 shrink-0">
+                      <Settings className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-zinc-900">Easy Integration</h4>
+                      <p className="text-sm text-zinc-500">Plug-and-play compatibility with all Digimat systems.</p>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
 
             <div className="bg-stone-50 rounded-3xl p-8 mb-12 border border-zinc-100">
               <h3 className="font-bold text-zinc-900 mb-6 flex items-center">
-                <CheckCircle2 className="w-5 h-5 text-randa-blue mr-2" />
+                <Settings className="w-5 h-5 text-randa-blue mr-2" />
                 Technical Specifications
               </h3>
               <div className="space-y-4">
-                {[
-                  { label: "Operating Voltage", value: "12V - 24V DC" },
-                  { label: "Communication", value: "Wireless / IP / Wired" },
-                  { label: "Material", value: "Antimicrobial ABS Plastic" },
-                  { label: "Mounting", value: "Surface or Flush Mount" },
-                  { label: "Certification", value: "CE, ISO 9001" }
-                ].map(spec => (
-                  <div key={spec.label} className="flex justify-between py-2 border-b border-zinc-200 text-sm">
-                    <span className="text-zinc-500 font-medium">{spec.label}</span>
-                    <span className="text-zinc-900 font-bold">{spec.value}</span>
-                  </div>
-                ))}
+                {product.specs ? (
+                  Object.entries(product.specs).map(([label, value]) => (
+                    <div key={label} className="flex justify-between py-2 border-b border-zinc-200 text-sm">
+                      <span className="text-zinc-500 font-medium">{label}</span>
+                      <span className="text-zinc-900 font-bold">{value}</span>
+                    </div>
+                  ))
+                ) : (
+                  [
+                    { label: "Operating Voltage", value: "12V - 24V DC" },
+                    { label: "Communication", value: "Wireless / IP / Wired" },
+                    { label: "Material", value: "Antimicrobial ABS Plastic" },
+                    { label: "Mounting", value: "Surface or Flush Mount" },
+                    { label: "Certification", value: "CE, ISO 9001" }
+                  ].map(spec => (
+                    <div key={spec.label} className="flex justify-between py-2 border-b border-zinc-200 text-sm">
+                      <span className="text-zinc-500 font-medium">{spec.label}</span>
+                      <span className="text-zinc-900 font-bold">{spec.value}</span>
+                    </div>
+                  ))
+                )}
               </div>
             </div>
 
-            <button className="w-full py-5 bg-randa-blue text-white rounded-2xl font-bold hover:bg-randa-blue/90 transition-all shadow-xl shadow-randa-blue/25">
+            <Link 
+              to="/contact" 
+              state={{ product: product.name }}
+              className="w-full py-5 bg-randa-blue text-white rounded-2xl font-bold hover:bg-randa-blue/90 transition-all shadow-xl shadow-randa-blue/25 inline-flex items-center justify-center"
+            >
               Request Quotation
-            </button>
+            </Link>
           </div>
         </div>
       </div>

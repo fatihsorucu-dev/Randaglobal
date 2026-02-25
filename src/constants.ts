@@ -10,7 +10,7 @@ import {
   Clock,
   Timer
 } from 'lucide-react';
-import { Category } from './types';
+import { Category, DocumentItem, ReferenceItem } from './types';
 
 export const LOGO_PATH = '/images/logo.png';
 
@@ -31,6 +31,20 @@ export const SOCIAL_LINKS = {
   instagram: 'https://instagram.com/randatechnology'
 };
 
+export const DOCUMENTS: DocumentItem[] = [
+  { id: '1', title: 'Digimat Product Catalog 2024', url: '#', type: 'pdf' },
+  { id: '2', title: 'Nurse Call System Installation Guide', url: '#', type: 'pdf' },
+  { id: '3', title: 'ISO 9001:2015 Certificate', url: '#', type: 'image' },
+  { id: '4', title: 'CE Declaration of Conformity', url: '#', type: 'pdf' },
+];
+
+export const REFERENCES: ReferenceItem[] = [
+  { id: '1', name: 'City Hospital Ankara', location: 'Ankara, Turkey', category: 'Healthcare' },
+  { id: '2', name: 'Grand Plaza Hotel', location: 'Istanbul, Turkey', category: 'Hospitality' },
+  { id: '3', name: 'National University Campus', location: 'Izmir, Turkey', category: 'Education' },
+  { id: '4', name: 'Industrial Zone Center', location: 'Bursa, Turkey', category: 'Industrial' },
+];
+
 export const CATEGORIES: Category[] = [
   {
     id: 'nurse-call',
@@ -44,8 +58,44 @@ export const CATEGORIES: Category[] = [
         icon: Wifi,
         image: '/images/subcategories/wireless-nurse.jpg',
         products: [
-          { id: 'nurse-station-display', name: 'Nurse Station Display', description: 'Central monitoring unit for all calls.', image: '/images/products/nurse-station-display.jpg' },
-          { id: 'nurse-call-button', name: 'Nurse Call Button', description: 'Standard patient call unit.', image: '/images/products/nurse-call-button.jpg' },
+          { 
+            id: 'nurse-station-display', 
+            name: 'Nurse Station Display', 
+            description: 'Central monitoring unit for all calls.', 
+            image: '/images/products/nurse-station-display.jpg',
+            features: [
+              'Real-time call monitoring',
+              'Visual and audible alerts',
+              'Staff presence tracking',
+              'Emergency call prioritization'
+            ],
+            specs: {
+              'Screen': '7-inch Touchscreen LCD',
+              'Resolution': '1024 x 600',
+              'Connectivity': 'WiFi 802.11 b/g/n',
+              'Power': '12V DC / 2A',
+              'Dimensions': '210 x 140 x 30 mm'
+            }
+          },
+          { 
+            id: 'nurse-call-button', 
+            name: 'Nurse Call Button', 
+            description: 'Standard patient call unit.', 
+            image: '/images/products/nurse-call-button.jpg',
+            features: [
+              'Antimicrobial surface',
+              'Braille embossed button',
+              'LED call confirmation',
+              'Easy wall mounting'
+            ],
+            specs: {
+              'Material': 'Antimicrobial ABS',
+              'Frequency': '433.92 MHz',
+              'Range': 'Up to 100m (Open area)',
+              'Battery': 'CR2450 Lithium',
+              'Dimensions': '86 x 86 x 15 mm'
+            }
+          },
           { id: 'handset-call-button', name: 'Handset Call Button', description: 'Ergonomic patient handset.', image: '/images/products/handset-call-button.jpg' },
           { id: 'pullcord-call-button', name: 'Pullcord Call Button', description: 'Emergency pull cord for bathrooms.', image: '/images/products/pullcord-call-button.jpg' },
           { id: 'codeblue-call-button', name: 'Codeblue Call Button', description: 'Critical emergency alert button.', image: '/images/products/codeblue-call-button.jpg' },
