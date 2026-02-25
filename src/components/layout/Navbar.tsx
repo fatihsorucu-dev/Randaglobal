@@ -35,7 +35,7 @@ export default function Navbar() {
   return (
     <nav className={cn(
       "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-      scrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-2" : "bg-transparent py-4"
+      scrolled ? "bg-randa-blue shadow-lg py-2" : "bg-randa-blue/95 py-4"
     )}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -45,17 +45,17 @@ export default function Navbar() {
               <img 
                 src={LOGO_PATH} 
                 alt={COMPANY_NAME} 
-                className="h-10 w-auto"
+                className="h-10 w-auto brightness-0 invert"
                 onError={() => setLogoError(true)}
               />
             ) : (
               <div className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-randa-blue rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center text-randa-blue font-bold text-xl">
                   {firstName[0]}
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-xl font-bold tracking-tight text-zinc-900 uppercase">{firstName}</span>
-                  <span className="text-[10px] uppercase tracking-[0.2em] text-zinc-500 -mt-1 font-semibold">{secondName}</span>
+                  <span className="text-xl font-bold tracking-tight text-white uppercase">{firstName}</span>
+                  <span className="text-[10px] uppercase tracking-[0.2em] text-white/60 -mt-1 font-semibold">{secondName}</span>
                 </div>
               </div>
             )}
@@ -70,9 +70,9 @@ export default function Navbar() {
                 onMouseEnter={() => setActiveDropdown(cat.id)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className="px-4 py-2 text-sm font-medium text-zinc-600 hover:text-randa-blue flex items-center space-x-1 transition-colors">
+                <button className="px-4 py-2 text-sm font-medium text-white hover:text-white/80 flex items-center space-x-1 transition-colors">
                   <span>{cat.name}</span>
-                  <ChevronDown className="w-4 h-4 opacity-50" />
+                  <ChevronDown className="w-4 h-4 opacity-70" />
                 </button>
                 
                 <AnimatePresence>
@@ -110,9 +110,9 @@ export default function Navbar() {
               onMouseEnter={() => setActiveDropdown('corporate')}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <button className="px-4 py-2 text-sm font-medium text-zinc-600 hover:text-randa-blue flex items-center space-x-1 transition-colors">
+              <button className="px-4 py-2 text-sm font-medium text-white hover:text-white/80 flex items-center space-x-1 transition-colors">
                 <span>Corporate</span>
-                <ChevronDown className="w-4 h-4 opacity-50" />
+                <ChevronDown className="w-4 h-4 opacity-70" />
               </button>
               
               <AnimatePresence>
@@ -134,7 +134,7 @@ export default function Navbar() {
               </AnimatePresence>
             </div>
 
-            <Link to="/contact" className="ml-4 px-5 py-2.5 bg-randa-blue text-white rounded-full text-sm font-semibold hover:bg-randa-blue/90 transition-all shadow-lg shadow-randa-blue/20 flex items-center space-x-2">
+            <Link to="/contact" className="ml-4 px-5 py-2.5 bg-white text-randa-blue rounded-full text-sm font-bold hover:bg-white/90 transition-all shadow-lg shadow-black/10 flex items-center space-x-2">
               <Phone className="w-4 h-4" />
               <span>Contact Us</span>
             </Link>
@@ -144,7 +144,7 @@ export default function Navbar() {
           <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 text-zinc-600 hover:text-randa-blue transition-colors"
+              className="p-2 text-white hover:text-white/80 transition-colors"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -159,17 +159,17 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t border-zinc-100 overflow-y-auto max-h-[calc(100vh-80px)]"
+            className="lg:hidden bg-randa-blue border-t border-white/10 overflow-y-auto max-h-[calc(100vh-80px)]"
           >
             <div className="px-4 pt-2 pb-6 space-y-1">
               {CATEGORIES.map((cat) => (
                 <div key={cat.id} className="py-2">
-                  <div className="text-xs font-bold text-zinc-400 uppercase tracking-widest px-3 mb-1">{cat.name}</div>
+                  <div className="text-xs font-bold text-white/50 uppercase tracking-widest px-3 mb-1">{cat.name}</div>
                   {cat.subcategories.map((sub) => (
                     <Link
                       key={sub.id}
                       to={`/category/${cat.id}/subcategory/${sub.id}`}
-                      className="block px-3 py-2 text-base font-medium text-zinc-600 hover:text-randa-blue hover:bg-stone-50 rounded-lg"
+                      className="block px-3 py-2 text-base font-medium text-white hover:bg-white/10 rounded-lg"
                     >
                       {sub.name}
                     </Link>
@@ -177,14 +177,14 @@ export default function Navbar() {
                 </div>
               ))}
               <div className="py-2">
-                <div className="text-xs font-bold text-zinc-400 uppercase tracking-widest px-3 mb-1">Corporate</div>
-                <Link to="/about" className="block px-3 py-2 text-base font-medium text-zinc-600 hover:text-randa-blue hover:bg-stone-50 rounded-lg">About Us</Link>
-                <Link to="/career" className="block px-3 py-2 text-base font-medium text-zinc-600 hover:text-randa-blue hover:bg-stone-50 rounded-lg">Career</Link>
-                <Link to="/documents" className="block px-3 py-2 text-base font-medium text-zinc-600 hover:text-randa-blue hover:bg-stone-50 rounded-lg">Documents</Link>
-                <Link to="/references" className="block px-3 py-2 text-base font-medium text-zinc-600 hover:text-randa-blue hover:bg-stone-50 rounded-lg">References</Link>
+                <div className="text-xs font-bold text-white/50 uppercase tracking-widest px-3 mb-1">Corporate</div>
+                <Link to="/about" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/10 rounded-lg">About Us</Link>
+                <Link to="/career" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/10 rounded-lg">Career</Link>
+                <Link to="/documents" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/10 rounded-lg">Documents</Link>
+                <Link to="/references" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/10 rounded-lg">References</Link>
               </div>
-              <div className="pt-4 border-t border-zinc-100">
-                <Link to="/contact" className="block px-3 py-2 text-base font-bold text-randa-blue">Contact Us</Link>
+              <div className="pt-4 border-t border-white/10">
+                <Link to="/contact" className="block px-3 py-2 text-base font-bold text-white bg-white/10 rounded-lg text-center">Contact Us</Link>
               </div>
             </div>
           </motion.div>
