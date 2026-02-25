@@ -32,13 +32,21 @@ export const SOCIAL_LINKS = {
 };
 
 export const DOCUMENTS: DocumentItem[] = [
-  { id: '1', title: 'Digimat Product Catalog 2024', url: '#', type: 'pdf', category: 'General Documents' },
-  { id: '2', title: 'ISO 9001:2015 Certificate', url: '#', type: 'image', category: 'General Documents' },
-  { id: '3', title: 'Nurse Call System Installation Guide', url: '#', type: 'pdf', category: 'Nurse Call Systems' },
-  { id: '4', title: 'Disabled Toilet Alarm Technical Specs', url: '#', type: 'pdf', category: 'Disabled Toilet Alarm Systems' },
-  { id: '5', title: 'Wireless Paging User Manual', url: '#', type: 'pdf', category: 'Wireless Paging Systems' },
-  { id: '6', title: 'Queue Management System Brochure', url: '#', type: 'pdf', category: 'Queue Management Systems' },
-  { id: '7', title: 'Synchronized Clock Setup Guide', url: '#', type: 'pdf', category: 'Synchronized Clock Systems' },
+  { id: '1', title: 'Digimat Product Catalog 2026', url: 'https://drive.google.com/file/d/1kCxJV1PDK31FrA4yJ14yBgo_XnPfbXWn/view?usp=sharing', type: 'pdf', category: 'General Documents' },
+  { id: '2', title: 'CE Nurse Call System Certificate', url: 'https://drive.google.com/file/d/1Oyp8_FpSfJSR3smZ0xyfYxkO8JhrH_1d/view?usp=sharing', type: 'pdf', category: 'General Documents' },
+  { id: '3', title: 'CE Master Clock System Certificate', url: 'https://drive.google.com/file/d/1vZC1sBm03OaY2nXSlfIohWHk9X8O5E-6/view?usp=sharing', type: 'pdf', category: 'General Documents' },
+  { id: '4', title: 'CE Queue Management System Certificate', url: 'https://drive.google.com/file/d/1gSC4V-z6NWoMkjIo93SKScgg_DJw8fNV/view?usp=sharing', type: 'pdf', category: 'General Documents' },
+  { id: '5', title: 'Analog Wired Nurse Call System Datasheet', url: 'https://drive.google.com/file/d/1cVWYdtrgsDbNpLpymzCLAsQGp2NAWH3s/view?usp=sharing', type: 'pdf', category: 'Nurse Call Systems' },
+  { id: '6', title: 'Wireless Call System Datasheet', url: 'https://drive.google.com/file/d/1gvaG9bi3FLk9tRrj19cPkzO9O9c-RUKr/view?usp=sharing', type: 'pdf', category: 'Nurse Call Systems' },
+  { id: '7', title: 'IP Nurse Call System Datasheet', url: 'https://drive.google.com/file/d/1AR2lXxvV05Ab5hcAKrUnout3znQGyiFL/view?usp=sharing', type: 'pdf', category: 'Nurse Call Systems' },
+  { id: '8', title: 'Analog Wired Nurse Call System Wiring Diagram', url: 'https://drive.google.com/file/d/1M6tP-JqhrGQtAwHMC5A-e3l0aBjc1gdm/view?usp=sharing', type: 'pdf', category: 'Nurse Call Systems' },
+  { id: '9', title: 'Wireless Call System Wiring Diagram', url: '#', type: 'pdf', category: 'Nurse Call Systems' },
+  { id: '10', title: 'IP Nurse Call System Wiring Diagram', url: 'https://drive.google.com/file/d/1_ZSn2G60mv3FO-cpFRf3RBtfCAwgzced/view?usp=sharing', type: 'pdf', category: 'Nurse Call Systems' },
+  { id: '11', title: 'Disabled Toilet Alarm Wiring Structure', url: 'https://drive.google.com/file/d/1TtansSF2OSHEKodOwW83UIsWflT-Q4h4/view?usp=sharing', type: 'pdf', category: 'Disabled Toilet Alarm Systems' },
+  { id: '12', title: 'Wireless Paging Datasheet', url: 'https://drive.google.com/file/d/143dFUz9sAMLFS_jM-sUnNxNPVmNRwVxR/view?usp=sharing', type: 'pdf', category: 'Wireless Paging Systems' },
+  { id: '13', title: 'Queue Management System Datasheet', url: 'https://drive.google.com/file/d/1iKBJWaU6JaLKG5on9ypHTXkGuyIIc5q2/view?usp=sharing', type: 'pdf', category: 'Queue Management Systems' },
+  { id: '14', title: 'PoE Master Clock System Datasheet', url: 'https://drive.google.com/file/d/1Vn8FMvSpY2VzRdYySNZa4KwtzhQgt4IT/view?usp=sharing', type: 'pdf', category: 'Synchronized Clock Systems' },
+  { id: '15', title: 'PoE Master Clock System Wiring Diagram', url: 'https://drive.google.com/file/d/1HuQ93BZu3obR8W1fz0ceWhmnyFAWcwsr/view?usp=sharing', type: 'pdf', category: 'Synchronized Clock Systems' },
 ];
 
 export const REFERENCE_PDF_URL = 'https://drive.google.com/your-drive-link-here';
