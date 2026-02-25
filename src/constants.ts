@@ -32,17 +32,23 @@ export const SOCIAL_LINKS = {
 };
 
 export const DOCUMENTS: DocumentItem[] = [
-  { id: '1', title: 'Digimat Product Catalog 2024', url: '#', type: 'pdf' },
-  { id: '2', title: 'Nurse Call System Installation Guide', url: '#', type: 'pdf' },
-  { id: '3', title: 'ISO 9001:2015 Certificate', url: '#', type: 'image' },
-  { id: '4', title: 'CE Declaration of Conformity', url: '#', type: 'pdf' },
+  { id: '1', title: 'Digimat Product Catalog 2024', url: '#', type: 'pdf', category: 'General Documents' },
+  { id: '2', title: 'ISO 9001:2015 Certificate', url: '#', type: 'image', category: 'General Documents' },
+  { id: '3', title: 'Nurse Call System Installation Guide', url: '#', type: 'pdf', category: 'Nurse Call Systems' },
+  { id: '4', title: 'Disabled Toilet Alarm Technical Specs', url: '#', type: 'pdf', category: 'Disabled Toilet Alarm Systems' },
+  { id: '5', title: 'Wireless Paging User Manual', url: '#', type: 'pdf', category: 'Wireless Paging Systems' },
+  { id: '6', title: 'Queue Management System Brochure', url: '#', type: 'pdf', category: 'Queue Management Systems' },
+  { id: '7', title: 'Synchronized Clock Setup Guide', url: '#', type: 'pdf', category: 'Synchronized Clock Systems' },
 ];
 
+export const REFERENCE_PDF_URL = 'https://drive.google.com/your-drive-link-here';
+
 export const REFERENCES: ReferenceItem[] = [
-  { id: '1', name: 'City Hospital Ankara', location: 'Ankara, Turkey', category: 'Healthcare' },
-  { id: '2', name: 'Grand Plaza Hotel', location: 'Istanbul, Turkey', category: 'Hospitality' },
-  { id: '3', name: 'National University Campus', location: 'Izmir, Turkey', category: 'Education' },
-  { id: '4', name: 'Industrial Zone Center', location: 'Bursa, Turkey', category: 'Industrial' },
+  { id: '1', name: 'City Hospital Ankara', location: 'Ankara, Turkey', category: 'Nurse Call Systems' },
+  { id: '2', name: 'Grand Plaza Hotel', location: 'Istanbul, Turkey', category: 'Wireless Paging Systems' },
+  { id: '3', name: 'National University Campus', location: 'Izmir, Turkey', category: 'Synchronized Clock Systems' },
+  { id: '4', name: 'Industrial Zone Center', location: 'Bursa, Turkey', category: 'Queue Management Systems' },
+  { id: '5', name: 'Central Medical Center', location: 'Ankara, Turkey', category: 'Disabled Toilet Alarm Systems' },
 ];
 
 export const CATEGORIES: Category[] = [
