@@ -33,28 +33,14 @@ export default function ProductDetail() {
         </Link>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Image Gallery */}
-          <div className="space-y-6">
-            <div className="rounded-[40px] overflow-hidden bg-white border-8 border-white shadow-2xl aspect-square">
-              <img 
-                src={product.image || `https://picsum.photos/seed/${product.id}/1000/1000`} 
-                alt={product.name}
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            <div className="grid grid-cols-3 gap-4">
-              {[1, 2, 3].map(i => (
-                <div key={i} className="rounded-2xl overflow-hidden bg-white border-4 border-white shadow-md aspect-square">
-                  <img 
-                    src={product.image ? product.image.replace('.jpg', `-${i}.jpg`) : `https://picsum.photos/seed/${product.id}-${i}/400/400`} 
-                    alt={`${product.name} view ${i}`}
-                    className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
-                  />
-                </div>
-              ))}
-            </div>
+          {/* Product Image */}
+          <div className="rounded-[40px] overflow-hidden bg-white border-8 border-white shadow-2xl aspect-square">
+            <img 
+              src={product.image || `https://picsum.photos/seed/${product.id}/1000/1000`} 
+              alt={product.name}
+              className="w-full h-full object-cover"
+              referrerPolicy="no-referrer"
+            />
           </div>
 
           {/* Content */}

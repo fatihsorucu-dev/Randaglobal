@@ -67,27 +67,27 @@ export const CATEGORIES: Category[] = [
           { 
             id: 'nurse-station-display', 
             name: 'Nurse Station Display', 
-            description: 'Wireless central monitoring unit for all calls.', 
-            image: '/images/products/wireless-nurse-station-display.jpg',
+            description: 'Central monitoring unit for all calls.', 
+            image: '/images/products/nurse-station-display.jpg',
             features: [
               'Real-time call monitoring',
               'Visual and audible alerts',
-              'Custom registration of call points',
+              'Staff presence tracking',
               'Emergency call prioritization'
             ],
             specs: {
-              'Screen': '7 Segment LED Screen',
-              'Dimensions': '480x170x58mm',
-              'Connection': 'RF Frequency',
-              'Range': '150 Meters (open space 200 meters)',
-              'Power': '220V'
+              'Screen': '7-inch Touchscreen LCD',
+              'Resolution': '1024 x 600',
+              'Connectivity': 'WiFi 802.11 b/g/n',
+              'Power': '12V DC / 2A',
+              'Dimensions': '210 x 140 x 30 mm'
             }
           },
           { 
             id: 'nurse-call-button', 
             name: 'Nurse Call Button', 
             description: 'Standard patient call unit.', 
-            image: '/images/products/wireless-nurse-call-button.jpg',
+            image: '/images/products/nurse-call-button.jpg',
             features: [
               'Antimicrobial surface',
               'Braille embossed button',
@@ -102,13 +102,13 @@ export const CATEGORIES: Category[] = [
               'Dimensions': '86 x 86 x 15 mm'
             }
           },
-          { id: 'handset-call-button', name: 'Handset Call Button', description: 'Ergonomic patient handset.', image: '/images/products/wireless-handset-call-button.jpg' },
-          { id: 'pullcord-call-button', name: 'Pullcord Call Button', description: 'Emergency pull cord for bathrooms.', image: '/images/products/wireless-pullcord-call-button.jpg' },
-          { id: 'codeblue-call-button', name: 'Codeblue Call Button', description: 'Critical emergency alert button.', image: '/images/products/wireless-codeblue-call-button.jpg' },
-          { id: 'over-door-lamp', name: 'Over Door Lamp', description: 'Visual indicator for room status.', image: '/images/products/wireless-over-door-lamp.jpg' },
-          { id: 'signal-repeater', name: 'Signal Repeater', description: 'Extends wireless coverage.', image: '/images/products/wireless-signal-repeater.jpg' },
-          { id: 'pager-transmitter', name: 'Pager Transmitter', description: 'Sends alerts to staff pagers.', image: '/images/products/wireless-pager-transmitter.jpg' },
-          { id: 'pager', name: 'Pager', description: 'Personal alert device for staff.', image: '/images/products/wireless-pager.jpg' },
+          { id: 'handset-call-button', name: 'Handset Call Button', description: 'Ergonomic patient handset.', image: '/images/products/handset-call-button.jpg' },
+          { id: 'pullcord-call-button', name: 'Pullcord Call Button', description: 'Emergency pull cord for bathrooms.', image: '/images/products/pullcord-call-button.jpg' },
+          { id: 'codeblue-call-button', name: 'Codeblue Call Button', description: 'Critical emergency alert button.', image: '/images/products/codeblue-call-button.jpg' },
+          { id: 'over-door-lamp', name: 'Over Door Lamp', description: 'Visual indicator for room status.', image: '/images/products/over-door-lamp.jpg' },
+          { id: 'signal-repeater', name: 'Signal Repeater', description: 'Extends wireless coverage.', image: '/images/products/signal-repeater.jpg' },
+          { id: 'pager-transmitter', name: 'Pager Transmitter', description: 'Sends alerts to staff pagers.', image: '/images/products/pager-transmitter.jpg' },
+          { id: 'pager', name: 'Pager', description: 'Personal alert device for staff.', image: '/images/products/pager.jpg' },
         ]
       },
       {
