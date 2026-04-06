@@ -32,31 +32,58 @@ export const SOCIAL_LINKS = {
 };
 
 export const DOCUMENTS: DocumentItem[] = [
-  { id: '1', title: 'Digimat Product Catalog 2026', url: 'https://drive.google.com/file/d/1kCxJV1PDK31FrA4yJ14yBgo_XnPfbXWn/view?usp=sharing', type: 'pdf', category: 'General Documents' },
-  { id: '2', title: 'CE Nurse Call System Certificate', url: 'https://drive.google.com/file/d/1Oyp8_FpSfJSR3smZ0xyfYxkO8JhrH_1d/view?usp=sharing', type: 'pdf', category: 'General Documents' },
-  { id: '3', title: 'CE Master Clock System Certificate', url: 'https://drive.google.com/file/d/1vZC1sBm03OaY2nXSlfIohWHk9X8O5E-6/view?usp=sharing', type: 'pdf', category: 'General Documents' },
-  { id: '4', title: 'CE Queue Management System Certificate', url: 'https://drive.google.com/file/d/1gSC4V-z6NWoMkjIo93SKScgg_DJw8fNV/view?usp=sharing', type: 'pdf', category: 'General Documents' },
-  { id: '5', title: 'Analog Wired Nurse Call System Datasheet', url: 'https://drive.google.com/file/d/1cVWYdtrgsDbNpLpymzCLAsQGp2NAWH3s/view?usp=sharing', type: 'pdf', category: 'Nurse Call Systems' },
-  { id: '6', title: 'Wireless Call System Datasheet', url: 'https://drive.google.com/file/d/1gvaG9bi3FLk9tRrj19cPkzO9O9c-RUKr/view?usp=sharing', type: 'pdf', category: 'Nurse Call Systems' },
-  { id: '7', title: 'IP Nurse Call System Datasheet', url: 'https://drive.google.com/file/d/1AR2lXxvV05Ab5hcAKrUnout3znQGyiFL/view?usp=sharing', type: 'pdf', category: 'Nurse Call Systems' },
-  { id: '8', title: 'Analog Wired Nurse Call System Wiring Diagram', url: 'https://drive.google.com/file/d/1M6tP-JqhrGQtAwHMC5A-e3l0aBjc1gdm/view?usp=sharing', type: 'pdf', category: 'Nurse Call Systems' },
-  { id: '9', title: 'Wireless Call System Wiring Diagram', url: '#', type: 'pdf', category: 'Nurse Call Systems' },
-  { id: '10', title: 'IP Nurse Call System Wiring Diagram', url: 'https://drive.google.com/file/d/1_ZSn2G60mv3FO-cpFRf3RBtfCAwgzced/view?usp=sharing', type: 'pdf', category: 'Nurse Call Systems' },
-  { id: '11', title: 'Disabled Toilet Alarm Wiring Structure', url: 'https://drive.google.com/file/d/1TtansSF2OSHEKodOwW83UIsWflT-Q4h4/view?usp=sharing', type: 'pdf', category: 'Disabled Toilet Alarm Systems' },
-  { id: '12', title: 'Wireless Paging Datasheet', url: 'https://drive.google.com/file/d/143dFUz9sAMLFS_jM-sUnNxNPVmNRwVxR/view?usp=sharing', type: 'pdf', category: 'Wireless Paging Systems' },
-  { id: '13', title: 'Queue Management System Datasheet', url: 'https://drive.google.com/file/d/1iKBJWaU6JaLKG5on9ypHTXkGuyIIc5q2/view?usp=sharing', type: 'pdf', category: 'Queue Management Systems' },
-  { id: '14', title: 'PoE Master Clock System Datasheet', url: 'https://drive.google.com/file/d/1Vn8FMvSpY2VzRdYySNZa4KwtzhQgt4IT/view?usp=sharing', type: 'pdf', category: 'Synchronized Clock Systems' },
-  { id: '15', title: 'PoE Master Clock System Wiring Diagram', url: 'https://drive.google.com/file/d/1HuQ93BZu3obR8W1fz0ceWhmnyFAWcwsr/view?usp=sharing', type: 'pdf', category: 'Synchronized Clock Systems' },
+  // English Documents
+  { id: '1', title: 'Digimat Product Catalog 2026', url: 'https://drive.google.com/file/d/1kCxJV1PDK31FrA4yJ14yBgo_XnPfbXWn/view?usp=sharing', type: 'pdf', category: 'General Documents', lang: 'en' },
+  { id: '2', title: 'CE Nurse Call System Certificate', url: 'https://drive.google.com/file/d/1Oyp8_FpSfJSR3smZ0xyfYxkO8JhrH_1d/view?usp=sharing', type: 'pdf', category: 'General Documents', lang: 'en' },
+  { id: '3', title: 'CE Master Clock System Certificate', url: 'https://drive.google.com/file/d/1vZC1sBm03OaY2nXSlfIohWHk9X8O5E-6/view?usp=sharing', type: 'pdf', category: 'General Documents', lang: 'en' },
+  { id: '4', title: 'CE Queue Management System Certificate', url: 'https://drive.google.com/file/d/1gSC4V-z6NWoMkjIo93SKScgg_DJw8fNV/view?usp=sharing', type: 'pdf', category: 'General Documents', lang: 'en' },
+  { id: '5', title: 'Analog Wired Nurse Call System Datasheet', url: 'https://drive.google.com/file/d/1cVWYdtrgsDbNpLpymzCLAsQGp2NAWH3s/view?usp=sharing', type: 'pdf', category: 'Nurse Call Systems', lang: 'en' },
+  { id: '6', title: 'Wireless Call System Datasheet', url: 'https://drive.google.com/file/d/1gvaG9bi3FLk9tRrj19cPkzO9O9c-RUKr/view?usp=sharing', type: 'pdf', category: 'Nurse Call Systems', lang: 'en' },
+  { id: '7', title: 'IP Nurse Call System Datasheet', url: 'https://drive.google.com/file/d/1AR2lXxvV05Ab5hcAKrUnout3znQGyiFL/view?usp=sharing', type: 'pdf', category: 'Nurse Call Systems', lang: 'en' },
+  { id: '8', title: 'Analog Wired Nurse Call System Wiring Diagram', url: 'https://drive.google.com/file/d/1M6tP-JqhrGQtAwHMC5A-e3l0aBjc1gdm/view?usp=sharing', type: 'pdf', category: 'Nurse Call Systems', lang: 'en' },
+  { id: '10', title: 'IP Nurse Call System Wiring Diagram', url: 'https://drive.google.com/file/d/1_ZSn2G60mv3FO-cpFRf3RBtfCAwgzced/view?usp=sharing', type: 'pdf', category: 'Nurse Call Systems', lang: 'en' },
+  { id: '11', title: 'Disabled Toilet Alarm Wiring Structure', url: 'https://drive.google.com/file/d/1TtansSF2OSHEKodOwW83UIsWflT-Q4h4/view?usp=sharing', type: 'pdf', category: 'Disabled Toilet Alarm Systems', lang: 'en' },
+  { id: '12', title: 'Wireless Paging Datasheet', url: 'https://drive.google.com/file/d/143dFUz9sAMLFS_jM-sUnNxNPVmNRwVxR/view?usp=sharing', type: 'pdf', category: 'Wireless Paging Systems', lang: 'en' },
+  { id: '13', title: 'Queue Management System Datasheet', url: 'https://drive.google.com/file/d/1iKBJWaU6JaLKG5on9ypHTXkGuyIIc5q2/view?usp=sharing', type: 'pdf', category: 'Queue Management Systems', lang: 'en' },
+  { id: '14', title: 'PoE Master Clock System Datasheet', url: 'https://drive.google.com/file/d/1Vn8FMvSpY2VzRdYySNZa4KwtzhQgt4IT/view?usp=sharing', type: 'pdf', category: 'Synchronized Clock Systems', lang: 'en' },
+  { id: '15', title: 'PoE Master Clock System Wiring Diagram', url: 'https://drive.google.com/file/d/1HuQ93BZu3obR8W1fz0ceWhmnyFAWcwsr/view?usp=sharing', type: 'pdf', category: 'Synchronized Clock Systems', lang: 'en' },
+  
+  // Turkish Documents
+  { id: 'tr-1', title: 'Digimat Ürün Kataloğu 2026', url: 'https://drive.google.com/file/d/1kCxJV1PDK31FrA4yJ14yBgo_XnPfbXWn/view?usp=sharing', type: 'pdf', category: 'Genel Dokümanlar', lang: 'tr' },
+  { id: 'tr-2', title: 'CE Hemşire Çağrı Sistemi Sertifikası', url: 'https://drive.google.com/file/d/1Oyp8_FpSfJSR3smZ0xyfYxkO8JhrH_1d/view?usp=sharing', type: 'pdf', category: 'Genel Dokümanlar', lang: 'tr' },
+  { id: 'tr-3', title: 'CE Merkezi Saat Sistemi Sertifikası', url: 'https://drive.google.com/file/d/1vZC1sBm03OaY2nXSlfIohWHk9X8O5E-6/view?usp=sharing', type: 'pdf', category: 'Genel Dokümanlar', lang: 'tr' },
+  { id: 'tr-4', title: 'CE Sıramatik Sistemi Sertifikası', url: 'https://drive.google.com/file/d/1gSC4V-z6NWoMkjIo93SKScgg_DJw8fNV/view?usp=sharing', type: 'pdf', category: 'Genel Dokümanlar', lang: 'tr' },
+  { id: 'tr-5', title: 'Analog Kablolu Hemşire Çağrı Sistemi Datasheet', url: 'https://drive.google.com/file/d/1cVWYdtrgsDbNpLpymzCLAsQGp2NAWH3s/view?usp=sharing', type: 'pdf', category: 'Hemşire Çağrı Sistemleri', lang: 'tr' },
+  { id: 'tr-6', title: 'Kablosuz Çağrı Sistemi Datasheet', url: 'https://drive.google.com/file/d/1gvaG9bi3FLk9tRrj19cPkzO9O9c-RUKr/view?usp=sharing', type: 'pdf', category: 'Hemşire Çağrı Sistemleri', lang: 'tr' },
+  { id: 'tr-7', title: 'IP Hemşire Çağrı Sistemi Datasheet', url: 'https://drive.google.com/file/d/1AR2lXxvV05Ab5hcAKrUnout3znQGyiFL/view?usp=sharing', type: 'pdf', category: 'Hemşire Çağrı Sistemleri', lang: 'tr' },
+  { id: 'tr-8', title: 'Analog Kablolu Hemşire Çağrı Sistemi Bağlantı Şeması', url: 'https://drive.google.com/file/d/1M6tP-JqhrGQtAwHMC5A-e3l0aBjc1gdm/view?usp=sharing', type: 'pdf', category: 'Hemşire Çağrı Sistemleri', lang: 'tr' },
+  { id: 'tr-10', title: 'IP Hemşire Çağrı Sistemi Bağlantı Şeması', url: 'https://drive.google.com/file/d/1_ZSn2G60mv3FO-cpFRf3RBtfCAwgzced/view?usp=sharing', type: 'pdf', category: 'Hemşire Çağrı Sistemleri', lang: 'tr' },
+  { id: 'tr-11', title: 'Engelli Tuvalet Alarmı Bağlantı Yapısı', url: 'https://drive.google.com/file/d/1TtansSF2OSHEKodOwW83UIsWflT-Q4h4/view?usp=sharing', type: 'pdf', category: 'Engelli Tuvalet Alarm Sistemleri', lang: 'tr' },
+  { id: 'tr-12', title: 'Kablosuz Çağrı Datasheet', url: 'https://drive.google.com/file/d/143dFUz9sAMLFS_jM-sUnNxNPVmNRwVxR/view?usp=sharing', type: 'pdf', category: 'Kablosuz Çağrı Sistemleri', lang: 'tr' },
+  { id: 'tr-13', title: 'Sıramatik Sistemi Datasheet', url: 'https://drive.google.com/file/d/1iKBJWaU6JaLKG5on9ypHTXkGuyIIc5q2/view?usp=sharing', type: 'pdf', category: 'Sıramatik Sistemleri', lang: 'tr' },
+  { id: 'tr-14', title: 'PoE Merkezi Saat Sistemi Datasheet', url: 'https://drive.google.com/file/d/1Vn8FMvSpY2VzRdYySNZa4KwtzhQgt4IT/view?usp=sharing', type: 'pdf', category: 'Senkronize Saat Sistemleri', lang: 'tr' },
+  { id: 'tr-15', title: 'PoE Merkezi Saat Sistemi Bağlantı Şeması', url: 'https://drive.google.com/file/d/1HuQ93BZu3obR8W1fz0ceWhmnyFAWcwsr/view?usp=sharing', type: 'pdf', category: 'Senkronize Saat Sistemleri', lang: 'tr' },
 ];
 
-export const REFERENCE_PDF_URL = 'https://drive.google.com/your-drive-link-here';
+export const REFERENCE_PDF_URLS: Record<string, string> = {
+  en: 'https://drive.google.com/file/d/1kCxJV1PDK31FrA4yJ14yBgo_XnPfbXWn/view?usp=sharing',
+  tr: 'https://drive.google.com/file/d/1kCxJV1PDK31FrA4yJ14yBgo_XnPfbXWn/view?usp=sharing'
+};
 
 export const REFERENCES: ReferenceItem[] = [
-  { id: '1', name: 'City Hospital Ankara', location: 'Ankara, Turkey', category: 'Nurse Call Systems' },
-  { id: '2', name: 'Grand Plaza Hotel', location: 'Istanbul, Turkey', category: 'Wireless Paging Systems' },
-  { id: '3', name: 'National University Campus', location: 'Izmir, Turkey', category: 'Synchronized Clock Systems' },
-  { id: '4', name: 'Industrial Zone Center', location: 'Bursa, Turkey', category: 'Queue Management Systems' },
-  { id: '5', name: 'Central Medical Center', location: 'Ankara, Turkey', category: 'Disabled Toilet Alarm Systems' },
+  // English References
+  { id: '1', name: 'City Hospital Ankara', location: 'Ankara, Turkey', category: 'Nurse Call Systems', lang: 'en' },
+  { id: '2', name: 'Grand Plaza Hotel', location: 'Istanbul, Turkey', category: 'Wireless Paging Systems', lang: 'en' },
+  { id: '3', name: 'National University Campus', location: 'Izmir, Turkey', category: 'Synchronized Clock Systems', lang: 'en' },
+  { id: '4', name: 'Industrial Zone Center', location: 'Bursa, Turkey', category: 'Queue Management Systems', lang: 'en' },
+  { id: '5', name: 'Central Medical Center', location: 'Ankara, Turkey', category: 'Disabled Toilet Alarm Systems', lang: 'en' },
+  
+  // Turkish References
+  { id: 'tr-1', name: 'Ankara Şehir Hastanesi', location: 'Ankara, Türkiye', category: 'Hemşire Çağrı Sistemleri', lang: 'tr' },
+  { id: 'tr-2', name: 'Grand Plaza Otel', location: 'İstanbul, Türkiye', category: 'Kablosuz Çağrı Sistemleri', lang: 'tr' },
+  { id: 'tr-3', name: 'Ulusal Üniversite Kampüsü', location: 'İzmir, Türkiye', category: 'Senkronize Saat Sistemleri', lang: 'tr' },
+  { id: 'tr-4', name: 'Organize Sanayi Bölgesi Merkezi', location: 'Bursa, Türkiye', category: 'Sıramatik Sistemleri', lang: 'tr' },
+  { id: 'tr-5', name: 'Merkez Tıp Merkezi', location: 'Ankara, Türkiye', category: 'Engelli Tuvalet Alarm Sistemleri', lang: 'tr' },
 ];
 
 export const CATEGORIES: Category[] = [

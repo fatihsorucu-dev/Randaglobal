@@ -1,13 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { FileText, Download, FileCode, Image as ImageIcon, ChevronRight } from 'lucide-react';
 import { DOCUMENTS } from '../constants';
+import { useTranslation } from '../contexts/LanguageContext';
 
 export default function Documents() {
-  const categories = Array.from(new Set(DOCUMENTS.map(doc => doc.category)));
+  const { t, currentLocale } = useTranslation();
+  
+  const filteredByLang = DOCUMENTS.filter(doc => !doc.lang || doc.lang === currentLocale);
+  const categories = Array.from(new Set(filteredByLang.map(doc => doc.category)));
+  
   const [activeCategory, setActiveCategory] = useState(categories[0]);
 
-  const filteredDocs = DOCUMENTS.filter(doc => doc.category === activeCategory);
+  // Reset active category if it's not in the new categories list
+  useEffect(() => {
+    if (!categories.includes(activeCategory)) {
+      setActiveCategory(categories[0]);
+    }
+  }, [currentLocale, categories]);
+
+  const filteredDocs = filteredByLang.filter(doc => doc.category === activeCategory);
 
   return (
     <motion.div
@@ -19,11 +31,10 @@ export default function Documents() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-7xl font-bold text-zinc-900 mb-8 tracking-tight">
-            Technical <span className="text-randa-blue">Documents.</span>
+            {t('common.technical_documents').split(' ')[0]} <span className="text-randa-blue">{t('common.technical_documents').split(' ').slice(1).join(' ')}</span>
           </h1>
           <p className="text-xl text-zinc-600 max-w-2xl mx-auto leading-relaxed">
-            Access our latest product catalogs, installation guides, and 
-            certifications.
+            {t('common.technical_documents_desc')}
           </p>
         </div>
 
@@ -31,7 +42,7 @@ export default function Documents() {
           {/* Sidebar */}
           <div className="lg:w-1/4">
             <div className="bg-white rounded-[32px] p-6 border border-zinc-100 shadow-xl shadow-zinc-200/50 sticky top-32">
-              <h3 className="text-xs font-bold text-zinc-400 uppercase tracking-widest mb-6 px-4">Categories</h3>
+              <h3 className="text-xs font-bold text-zinc-400 uppercase tracking-widest mb-6 px-4">{t('footer.quick_links')}</h3>
               <nav className="space-y-2">
                 {categories.map((category) => (
                   <button
@@ -80,7 +91,7 @@ export default function Documents() {
                         className="inline-flex items-center space-x-2 text-sm font-bold text-randa-blue hover:text-randa-blue/80 transition-colors"
                       >
                         <Download className="w-4 h-4" />
-                        <span>Download {doc.type.toUpperCase()}</span>
+                        <span>{t('common.download')} {doc.type.toUpperCase()}</span>
                       </a>
                     </div>
                   ))}

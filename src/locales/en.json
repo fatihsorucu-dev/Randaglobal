@@ -1,0 +1,391 @@
+{
+  "meta": {
+    "title": "English",
+    "short": "EN",
+    "icon": "https://flagcdn.com/w40/gb.png"
+  },
+  "navbar": {
+    "corporate": "Corporate",
+    "about": "About Us",
+    "career": "Career",
+    "documents": "Documents",
+    "references": "References",
+    "contact": "Contact Us",
+    "nurse-call": "Nurse Call Systems",
+    "disabled-toilet": "Disabled Toilet Alarm",
+    "wireless-paging": "Wireless Paging",
+    "queue-systems": "Queue Systems",
+    "clock-systems": "Synchronized Clocks"
+  },
+  "subcategories": {
+    "wireless-nurse": "Wireless Nurse Call System",
+    "wireless-nurse-desc": "Flexible and easy to install wireless communication.",
+    "ip-nurse": "IP Nurse Call System",
+    "ip-nurse-desc": "Advanced network-based patient monitoring.",
+    "analog-nurse": "Analog Wired Nurse Call System",
+    "analog-nurse-desc": "Reliable traditional wired solutions.",
+    "wireless-toilet": "Wireless Accessible Toilet Alarm",
+    "wireless-toilet-desc": "Quick-install emergency alert systems.",
+    "wired-toilet": "Wired Disabled Toilet Alarm",
+    "wired-toilet-desc": "Standard wired emergency pull-cord systems.",
+    "emergency-kit": "Emergency Assist Alarm Kit",
+    "emergency-kit-desc": "Complete all-in-one emergency kits.",
+    "staff-paging": "Wireless Staff Calling System",
+    "staff-paging-desc": "Efficient internal communication for teams.",
+    "emergency-codes": "Hospital Emergency Codes",
+    "emergency-codes-desc": "Critical alert systems for medical emergencies.",
+    "electronic-queue": "Electronic Queue Management System",
+    "electronic-queue-desc": "Digital ticketing and display solutions.",
+    "poe-clock": "PoE NTP Master Clock System",
+    "poe-clock-desc": "Network-synced precision timing.",
+    "wireless-clock": "Wireless Synchronized Clock System",
+    "wireless-clock-desc": "Easy-to-deploy synchronized timekeeping."
+  },
+  "home": {
+    "hero_badge": "Innovating Since 1998",
+    "hero_title": "Advanced Digital Call Systems.",
+    "hero_subtitle": "Empowering healthcare and service providers with reliable, state-of-the-art communication infrastructures designed for critical environments.",
+    "hero_cta_explore": "Explore Systems",
+    "hero_cta_learn": "Learn More",
+    "hero_stats_projects": "Projects Delivered",
+    "hero_stats_years": "Years Experience",
+    "hero_stats_reach": "Global Reach",
+    "hero_certified_title": "Certified Quality",
+    "hero_certified_desc": "All systems are manufactured under ISO 9001:2015 standards.",
+    "trust_certified": "Certified",
+    "trust_certified_desc": "ISO 9001:2015",
+    "trust_award": "Award Winning",
+    "trust_award_desc": "R&D Excellence",
+    "trust_team": "Expert Team",
+    "trust_team_desc": "In-house R&D",
+    "trust_healthcare": "Healthcare",
+    "trust_healthcare_desc": "Specialized Focus",
+    "core_systems_title": "Our Core Systems",
+    "core_systems_subtitle": "Comprehensive communication and monitoring solutions designed for reliability and ease of use in professional environments.",
+    "view_details": "View Details"
+  },
+  "about": {
+    "hero_title_1": "Crafting Excellence in",
+    "hero_title_2": "Digital Communication.",
+    "hero_subtitle": "Since 1998, Randa Technology has been at the forefront of designing and manufacturing advanced call systems that empower healthcare professionals and service providers.",
+    "story_badge": "Our Journey",
+    "story_title": "A Legacy of Innovation",
+    "story_p1": "Randa Technology was founded with a clear vision: to bridge the gap between technology and human needs in critical environments. Over the past two decades, we have evolved from a small R&D boutique to a globally recognized manufacturer.",
+    "story_p2": "Our expertise lies in the development of sophisticated communication infrastructures that ensure safety and efficiency in healthcare, hospitality, and industrial sectors. We take pride in our in-house R&D capabilities, allowing us to stay ahead of industry trends and deliver bespoke solutions to our clients.",
+    "story_p3": "Our registered trademark, Digimat, has become synonymous with reliability in hospitals, nursing homes, and public facilities across multiple continents. We are committed to continuous improvement and excellence in everything we do.",
+    "mission_title": "Our Mission",
+    "mission_desc": "To provide state-of-the-art digital communication solutions that enhance safety, efficiency, and comfort in professional environments.",
+    "vision_title": "Our Vision",
+    "vision_desc": "To be the global leader in digital call systems, setting new benchmarks for quality, innovation, and user-centric design.",
+    "values_title": "Our Values",
+    "values_desc": "Integrity, innovation, and unwavering commitment to customer satisfaction are the pillars of everything we build."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have a project in mind or need technical support? Our team of experts is ready to assist you with your digital call system needs.",
+    "call_us": "Call Us",
+    "email_us": "Email Us",
+    "visit_us": "Visit Us",
+    "support": "Support",
+    "form_name": "Full Name",
+    "form_email": "Email Address",
+    "form_subject": "Subject",
+    "form_name_placeholder": "John Doe",
+    "form_email_placeholder": "john@example.com",
+    "form_subject_placeholder": "Inquiry about Nurse Call Systems",
+    "form_message": "Message",
+    "form_message_placeholder": "Tell us about your requirements...",
+    "form_send": "Send Message",
+    "form_sending": "Sending...",
+    "success_title": "Message Sent!",
+    "success_desc": "Thank you for contacting us. Your message has been sent to info@randa.com.tr. Our team will get back to you shortly.",
+    "send_another": "Send another message"
+  },
+  "footer": {
+    "brand_desc": "Established in 1998, Randa Technology is a leading provider of digital call systems. We specialize in R&D, design, and manufacturing of high-quality solutions under our registered trademark Digimat.",
+    "quick_links": "Quick Links",
+    "our_systems": "Our Systems",
+    "contact_info": "Contact Info",
+    "rights_reserved": "All Rights Reserved. | Digimat Digital Call Systems",
+    "company_name": "Randa Technology"
+  },
+  "categories": {
+    "nurse-call-desc": "Advanced patient-to-nurse communication solutions for modern healthcare facilities.",
+    "disabled-toilet-desc": "Reliable emergency alert systems for accessible restrooms and public facilities.",
+    "wireless-paging-desc": "Efficient wireless communication for staff and guest management.",
+    "queue-systems-desc": "Streamlined customer flow management with digital ticketing and displays.",
+    "clock-systems-desc": "Precision synchronized timing solutions for hospitals and institutions."
+  },
+  "common": {
+    "back_to": "Back to",
+    "view_details": "View Details",
+    "category_not_found": "Category not found",
+    "subcategory_not_found": "Subcategory not found",
+    "product_not_found": "Product not found",
+    "request_quotation": "Request Quotation",
+    "technical_specs": "Technical Specifications",
+    "professional_series": "Digimat Professional Series",
+    "high_efficiency": "High Efficiency",
+    "high_efficiency_desc": "Optimized power consumption and rapid response times.",
+    "easy_integration": "Easy Integration",
+    "easy_integration_desc": "Plug-and-play compatibility with all Digimat systems.",
+    "operating_voltage": "Operating Voltage",
+    "communication": "Communication",
+    "material": "Material",
+    "mounting": "Mounting",
+    "certification": "Certification",
+    "screen": "Screen",
+    "call_devices": "Call Devices",
+    "connection": "Connection",
+    "power": "Power",
+    "weight": "Weight",
+    "dimensions": "Dimensions",
+    "frequency": "Frequency",
+    "range": "Range",
+    "battery": "Battery",
+    "technical_documents": "Technical Documents",
+    "technical_documents_desc": "Access our latest product catalogs, installation guides, and certifications.",
+    "download": "Download",
+    "our_references": "Our References",
+    "our_references_desc": "Trusted by leading institutions worldwide for critical communication infrastructure.",
+    "download_reference_list": "Download Reference List (PDF)",
+    "language": "Language",
+    "join_our_team": "Join Our Team",
+    "join_our_team_desc": "We are always looking for talented individuals who are passionate about technology and innovation.",
+    "career_p1": "To become a part of the {company} team, simply fill out our contact form or send your CV to {email}.",
+    "career_p2": "Your application will be reviewed by our relevant department, and suitable candidates will be contacted as soon as possible.",
+    "go_to_contact_form": "Go to Contact Form",
+    "send_cv_via_email": "Send CV via Email"
+  },
+  "products": {
+    "nurse-station-display": {
+      "name": "Nurse Station Display",
+      "description": "Central monitoring unit for all calls.",
+      "features": [
+        "Real-time call monitoring",
+        "Visual and audible alerts",
+        "Support up to 128 call devices",
+        "Emergency call prioritization"
+      ],
+      "specs": {
+        "material": "ABS Black Plastic",
+        "screen": "7 Segment LED Display",
+        "call_devices": "128 call devices can be used",
+        "connection": "RF",
+        "power": "220V",
+        "weight": "1380g",
+        "dimensions": "480 x 170 x 58 mm"
+      }
+    },
+    "nurse-call-button": {
+      "name": "Nurse Call Button",
+      "description": "Standard patient call unit.",
+      "features": [
+        "Antimicrobial surface",
+        "Braille embossed button",
+        "LED call confirmation",
+        "Easy wall mounting"
+      ],
+      "specs": {
+        "material": "ABS White Plastic",
+        "frequency": "433.3 MHz",
+        "range": "Up to 100m (Open area)",
+        "battery": "CR2032 Lithium",
+        "weight": "70g",
+        "dimensions": "84 x 84 x 33 mm"
+      }
+    },
+    "handset-call-button": {
+      "name": "Handset Call Button",
+      "description": "Ergonomic patient handset.",
+      "features": [
+        "Antimicrobial surface",
+        "1.5m spiral cable for easier use",
+        "LED call confirmation",
+        "Easy wall mounting with socket"
+      ],
+      "specs": {
+        "material": "ABS White Plastic",
+        "frequency": "433.3 MHz",
+        "range": "Up to 100m (Open area)",
+        "power": "Connected to Bedside Button",
+        "weight": "92g",
+        "dimensions": "44 x 131 x 24 mm"
+      }
+    },
+    "pullcord-call-button": {
+      "name": "Pullcord Call Button",
+      "description": "Emergency pull cord for bathrooms.",
+      "features": [
+        "Antimicrobial surface",
+        "Pull Cord for easier patient use",
+        "Buttons on casing for call and reset functions",
+        "LED call confirmation",
+        "Easy wall mounting"
+      ],
+      "specs": {
+        "material": "ABS White Plastic",
+        "frequency": "433.3 MHz",
+        "range": "Up to 100m (Open area)",
+        "battery": "CR2032 Lithium",
+        "weight": "88g",
+        "dimensions": "84 x 84 x 33 mm"
+      }
+    },
+    "codeblue-call-button": {
+      "name": "Codeblue Call Button",
+      "description": "Critical emergency alert button.",
+      "features": [
+        "Antimicrobial surface",
+        "One button circular casing",
+        "Easy to use",
+        "LED call confirmation",
+        "Easy wall mounting"
+      ],
+      "specs": {
+        "material": "ABS White Plastic",
+        "frequency": "433.3 MHz",
+        "range": "Up to 100m (Open area)",
+        "battery": "CR2032 Lithium",
+        "weight": "40g",
+        "dimensions": "75 x 75 x 22 mm"
+      }
+    },
+    "over-door-lamp": {
+      "name": "Over Door Lamp",
+      "description": "Visual indicator for room status.",
+      "features": [
+        "High quality ABS Plastic Casing",
+        "4 Type Color Option",
+        "Easy to Spot",
+        "Audio Alert with Each Call",
+        "Easy wall mounting"
+      ],
+      "specs": {
+        "material": "ABS White Plastic",
+        "frequency": "433.3 MHz",
+        "range": "Up to 100m (Open area)",
+        "power": "220V",
+        "weight": "140g",
+        "dimensions": "85 x 85 x 38 mm"
+      }
+    },
+    "signal-repeater": {
+      "name": "Signal Repeater",
+      "description": "Extends wireless coverage.",
+      "features": [
+        "Extends communication range",
+        "No interference with other networks",
+        "Easy to use",
+        "LED call confirmation for calls that are received",
+        "Easy wall mounting"
+      ],
+      "specs": {
+        "material": "ABS White Plastic",
+        "frequency": "433.3 MHz",
+        "range": "Up to 100m (Open area)",
+        "power": "220V",
+        "weight": "140g",
+        "dimensions": "85 x 85 x 38 mm"
+      }
+    },
+    "pager-transmitter": {
+      "name": "Pager Transmitter",
+      "description": "Sends alerts to staff pagers.",
+      "features": [
+        "Antenna for long range",
+        "RS232 Communication",
+        "Easy to use",
+        "LED status confirmation",
+        "Easy wall mounting"
+      ],
+      "specs": {
+        "material": "Aluminum Alloy",
+        "frequency": "433.3 MHz",
+        "range": "Up to 100m (Open area)",
+        "power": "220V using power supply with transmitter",
+        "weight": "230g",
+        "dimensions": "84 x 97 x 24 mm"
+      }
+    },
+    "pager": {
+      "name": "Pager",
+      "description": "Personal alert device for staff.",
+      "features": [
+        "Loud alerts for calls",
+        "16 character call notification",
+        "Multiple language support",
+        "Easy to use",
+        "Easy wall mounting"
+      ],
+      "specs": {
+        "material": "ABS Black Plastic",
+        "frequency": "433.3 MHz",
+        "range": "Up to 150m (Open area)",
+        "battery": "1.5V AAA",
+        "weight": "68g",
+        "dimensions": "76 x 53 x 18 mm"
+      }
+    },
+    "ip-nurse-station": {
+      "name": "Nurse Station Console",
+      "description": "Touchscreen IP console for call management."
+    },
+    "ip-room-unit": {
+      "name": "Room Control Unit",
+      "description": "Intelligent room management module."
+    },
+    "ip-call-reset": {
+      "name": "Call And Reset Button",
+      "description": "Integrated call and reset unit."
+    },
+    "ip-handset": {
+      "name": "Handset Call Button",
+      "description": "IP-based patient handset."
+    },
+    "ip-wc-pullcord": {
+      "name": "Wc Pull Cord Button",
+      "description": "IP emergency pull cord."
+    },
+    "ip-warning-lamp": {
+      "name": "Warning Lamp",
+      "description": "Multi-color IP status indicator."
+    },
+    "ip-server": {
+      "name": "Hospital Call System Server",
+      "description": "Central management software and server."
+    },
+    "analog-display": {
+      "name": "Nurse Call Display",
+      "description": "Traditional LED call display."
+    },
+    "analog-bedside": {
+      "name": "Bedside Call Button",
+      "description": "Wired bedside call unit."
+    },
+    "analog-handle": {
+      "name": "Handle Call Button",
+      "description": "Traditional patient handle."
+    },
+    "analog-reset": {
+      "name": "Reset Button",
+      "description": "Manual call reset unit."
+    },
+    "analog-pullcord": {
+      "name": "Emergency Pull Cord Button",
+      "description": "Wired emergency pull cord."
+    },
+    "analog-corridor": {
+      "name": "Corridor Light",
+      "description": "Simple visual room indicator."
+    },
+    "analog-room-unit": {
+      "name": "Room Control Unit",
+      "description": "Analog room control module."
+    },
+    "analog-extender": {
+      "name": "Range Extender Module",
+      "description": "Signal booster for long cable runs."
+    }
+  }
+}

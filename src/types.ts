@@ -37,6 +37,7 @@ export interface DocumentItem {
   url: string;
   type: 'pdf' | 'doc' | 'image';
   category: string;
+  lang?: string;
 }
 
 export interface ReferenceItem {
@@ -45,4 +46,5 @@ export interface ReferenceItem {
   location: string;
   category: string;
   logo?: string;
+  lang?: string;
 }

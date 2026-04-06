@@ -1,0 +1,391 @@
+{
+  "meta": {
+    "title": "Türkçe",
+    "short": "TR",
+    "icon": "https://flagcdn.com/w40/tr.png"
+  },
+  "navbar": {
+    "corporate": "Kurumsal",
+    "about": "Hakkımızda",
+    "career": "Kariyer",
+    "documents": "Dokümanlar",
+    "references": "Referanslar",
+    "contact": "Bize Ulaşın",
+    "nurse-call": "Hemşire Çağrı Sistemleri",
+    "disabled-toilet": "Engelli WC Alarmı",
+    "wireless-paging": "Kablosuz Çağrı",
+    "queue-systems": "Sıra Sistemleri",
+    "clock-systems": "Senkron Saatler"
+  },
+  "subcategories": {
+    "wireless-nurse": "Kablosuz Hemşire Çağrı Sistemi",
+    "wireless-nurse-desc": "Esnek ve kurulumu kolay kablosuz iletişim.",
+    "ip-nurse": "IP Hemşire Çağrı Sistemi",
+    "ip-nurse-desc": "Gelişmiş ağ tabanlı hasta izleme.",
+    "analog-nurse": "Analog Kablolu Hemşire Çağrı Sistemi",
+    "analog-nurse-desc": "Güvenilir geleneksel kablolu çözümler.",
+    "wireless-toilet": "Kablosuz Engelli WC Alarmı",
+    "wireless-toilet-desc": "Hızlı kurulumlu acil uyarı sistemleri.",
+    "wired-toilet": "Kablolu Engelli WC Alarmı",
+    "wired-toilet-desc": "Standart kablolu acil ipli çağrı sistemleri.",
+    "emergency-kit": "Acil Yardım Alarm Seti",
+    "emergency-kit-desc": "Hepsi bir arada eksiksiz acil durum kitleri.",
+    "staff-paging": "Kablosuz Personel Çağrı Sistemi",
+    "staff-paging-desc": "Ekipler için verimli dahili iletişim.",
+    "emergency-codes": "Hastane Acil Kodları",
+    "emergency-codes-desc": "Tıbbi acil durumlar için kritik uyarı sistemleri.",
+    "electronic-queue": "Elektronik Sıra Yönetim Sistemi",
+    "electronic-queue-desc": "Dijital biletleme ve ekran çözümleri.",
+    "poe-clock": "PoE NTP Master Saat Sistemi",
+    "poe-clock-desc": "Ağ senkronizasyonlu hassas zamanlama.",
+    "wireless-clock": "Kablosuz Senkron Saat Sistemi",
+    "wireless-clock-desc": "Kurulumu kolay senkronize zaman tutma."
+  },
+  "home": {
+    "hero_badge": "1998'den Beri Yenilikçi",
+    "hero_title": "Gelişmiş Dijital Çağrı Sistemleri.",
+    "hero_subtitle": "Sağlık ve hizmet sağlayıcılarını, kritik ortamlar için tasarlanmış güvenilir, son teknoloji iletişim altyapılarıyla güçlendiriyoruz.",
+    "hero_cta_explore": "Sistemleri Keşfet",
+    "hero_cta_learn": "Daha Fazla Bilgi",
+    "hero_stats_projects": "Tamamlanan Proje",
+    "hero_stats_years": "Yıllık Deneyim",
+    "hero_stats_reach": "Küresel Erişim",
+    "hero_certified_title": "Sertifikalı Kalite",
+    "hero_certified_desc": "Tüm sistemler ISO 9001:2015 standartları altında üretilmektedir.",
+    "trust_certified": "Sertifikalı",
+    "trust_certified_desc": "ISO 9001:2015",
+    "trust_award": "Ödüllü",
+    "trust_award_desc": "Ar-Ge Mükemmelliği",
+    "trust_team": "Uzman Ekip",
+    "trust_team_desc": "Kendi Bünyemizde Ar-Ge",
+    "trust_healthcare": "Sağlık Hizmetleri",
+    "trust_healthcare_desc": "Uzmanlaşmış Odak",
+    "core_systems_title": "Temel Sistemlerimiz",
+    "core_systems_subtitle": "Profesyonel ortamlarda güvenilirlik ve kullanım kolaylığı için tasarlanmış kapsamlı iletişim ve izleme çözümleri.",
+    "view_details": "Detayları Gör"
+  },
+  "about": {
+    "hero_title_1": "Dijital İletişimde",
+    "hero_title_2": "Mükemmelliği Tasarlıyoruz.",
+    "hero_subtitle": "1998'den beri Randa Teknoloji, sağlık profesyonellerini ve hizmet sağlayıcılarını güçlendiren gelişmiş çağrı sistemlerinin tasarımı ve üretiminde ön saflarda yer almaktadır.",
+    "story_badge": "Yolculuğumuz",
+    "story_title": "İnovasyon Mirası",
+    "story_p1": "Randa Teknoloji, kritik ortamlarda teknoloji ile insan ihtiyaçları arasındaki boşluğu doldurmak gibi net bir vizyonla kuruldu. Son yirmi yılda, küçük bir Ar-Ge butiğinden küresel olarak tanınan bir üreticiye dönüştük.",
+    "story_p2": "Uzmanlığımız, sağlık, konaklama ve endüstriyel sektörlerde güvenlik ve verimlilik sağlayan sofistike iletişim altyapılarının geliştirilmesinde yatmaktadır. Sektör trendlerinin önünde kalmamızı ve müşterilerimize özel çözümler sunmamızı sağlayan kurum içi Ar-Ge yeteneklerimizle gurur duyuyoruz.",
+    "story_p3": "Tescilli markamız Digimat, birçok kıtada hastanelerde, huzurevlerinde ve kamu tesislerinde güvenilirlikle eş anlamlı hale gelmiştir. Yaptığımız her şeyde sürekli iyileştirme ve mükemmelliğe bağlıyız.",
+    "mission_title": "Misyonumuz",
+    "mission_desc": "Profesyonel ortamlarda güvenliği, verimliliği ve konforu artıran son teknoloji dijital iletişim çözümleri sunmak.",
+    "vision_title": "Vizyonumuz",
+    "vision_desc": "Kalite, inovasyon ve kullanıcı merkezli tasarım için yeni standartlar belirleyerek dijital çağrı sistemlerinde küresel lider olmak.",
+    "values_title": "Değerlerimiz",
+    "values_desc": "Dürüstlük, inovasyon ve müşteri memnuniyetine sarsılmaz bağlılık, inşa ettiğimiz her şeyin temel taşlarıdır."
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "subtitle": "Aklınızda bir proje mi var veya teknik desteğe mi ihtiyacınız var? Uzman ekibimiz dijital çağrı sistemi ihtiyaçlarınızda size yardımcı olmaya hazır.",
+    "call_us": "Bizi Arayın",
+    "email_us": "E-posta Gönderin",
+    "visit_us": "Bizi Ziyaret Edin",
+    "support": "Destek",
+    "form_name": "Ad Soyad",
+    "form_email": "E-posta Adresi",
+    "form_subject": "Konu",
+    "form_name_placeholder": "Ahmet Yılmaz",
+    "form_email_placeholder": "ahmet@ornek.com",
+    "form_subject_placeholder": "Hemşire Çağrı Sistemleri Hakkında Bilgi",
+    "form_message": "Mesaj",
+    "form_message_placeholder": "Gereksinimlerinizden bahsedin...",
+    "form_send": "Mesaj Gönder",
+    "form_sending": "Gönderiliyor...",
+    "success_title": "Mesaj Gönderildi!",
+    "success_desc": "Bizimle iletişime geçtiğiniz için teşekkür ederiz. Mesajınız info@randa.com.tr adresine iletildi. Ekibimiz en kısa sürede size geri dönecektir.",
+    "send_another": "Başka bir mesaj gönder"
+  },
+  "footer": {
+    "brand_desc": "1998 yılında kurulan Randa Teknoloji, dijital çağrı sistemlerinin önde gelen sağlayıcısıdır. Tescilli markamız Digimat altında yüksek kaliteli çözümlerin Ar-Ge, tasarım ve üretiminde uzmanlaşıyoruz.",
+    "quick_links": "Hızlı Bağlantılar",
+    "our_systems": "Sistemlerimiz",
+    "contact_info": "İletişim Bilgileri",
+    "rights_reserved": "Tüm Hakları Saklıdır. | Digimat Dijital Çağrı Sistemleri",
+    "company_name": "Randa Teknoloji"
+  },
+  "categories": {
+    "nurse-call-desc": "Modern sağlık tesisleri için gelişmiş hastadan hemşireye iletişim çözümleri.",
+    "disabled-toilet-desc": "Erişilebilir tuvaletler ve kamu tesisleri için güvenilir acil uyarı sistemleri.",
+    "wireless-paging-desc": "Personel ve misafir yönetimi için verimli kablosuz iletişim.",
+    "queue-systems-desc": "Dijital biletleme ve ekranlarla kolaylaştırılmış müşteri akış yönetimi.",
+    "clock-systems-desc": "Hastaneler ve kurumlar için hassas senkronize zamanlama çözümleri."
+  },
+  "common": {
+    "back_to": "Geri dön:",
+    "view_details": "Detayları Gör",
+    "category_not_found": "Kategori bulunamadı",
+    "subcategory_not_found": "Alt kategori bulunamadı",
+    "product_not_found": "Ürün bulunamadı",
+    "request_quotation": "Teklif İste",
+    "technical_specs": "Teknik Özellikler",
+    "professional_series": "Digimat Profesyonel Seri",
+    "high_efficiency": "Yüksek Verimlilik",
+    "high_efficiency_desc": "Optimize edilmiş güç tüketimi ve hızlı tepki süreleri.",
+    "easy_integration": "Kolay Entegrasyon",
+    "easy_integration_desc": "Tüm Digimat sistemleriyle tak-çalıştır uyumluluğu.",
+    "operating_voltage": "Çalışma Voltajı",
+    "communication": "İletişim",
+    "material": "Malzeme",
+    "mounting": "Montaj",
+    "certification": "Sertifikasyon",
+    "screen": "Ekran",
+    "call_devices": "Çağrı Cihazları",
+    "connection": "Bağlantı",
+    "power": "Güç",
+    "weight": "Ağırlık",
+    "dimensions": "Boyutlar",
+    "frequency": "Frekans",
+    "range": "Menzil",
+    "battery": "Pil",
+    "technical_documents": "Teknik Dokümanlar",
+    "technical_documents_desc": "En güncel ürün kataloglarımıza, kurulum kılavuzlarımıza ve sertifikalarımıza erişin.",
+    "download": "İndir",
+    "our_references": "Referanslarımız",
+    "our_references_desc": "Kritik iletişim altyapısı için dünya çapındaki lider kurumlar tarafından güvenilmektedir.",
+    "download_reference_list": "Referans Listesini İndir (PDF)",
+    "language": "Dil",
+    "join_our_team": "Ekibimize Katılın",
+    "join_our_team_desc": "Teknoloji ve inovasyon konusunda tutkulu, yetenekli bireyleri her zaman arıyoruz.",
+    "career_p1": "{company} ekibinin bir parçası olmak için iletişim formumuzu doldurmanız veya özgeçmişinizi {email} adresine göndermeniz yeterlidir.",
+    "career_p2": "Başvurunuz ilgili birimimiz tarafından incelenecek ve uygun adaylarla en kısa sürede iletişime geçilecektir.",
+    "go_to_contact_form": "İletişim Formuna Git",
+    "send_cv_via_email": "E-posta ile CV Gönder"
+  },
+  "products": {
+    "nurse-station-display": {
+      "name": "Hemşire İstasyon Paneli",
+      "description": "Tüm çağrılar için merkezi izleme ünitesi.",
+      "features": [
+        "Gerçek zamanlı çağrı izleme",
+        "Görsel ve sesli uyarılar",
+        "128 çağrı cihazına kadar destek",
+        "Acil çağrı önceliklendirme"
+      ],
+      "specs": {
+        "material": "ABS Siyah Plastik",
+        "screen": "7 Segment LED Ekran",
+        "call_devices": "128 çağrı cihazı kullanılabilir",
+        "connection": "RF",
+        "power": "220V",
+        "weight": "1380g",
+        "dimensions": "480 x 170 x 58 mm"
+      }
+    },
+    "nurse-call-button": {
+      "name": "Hemşire Çağrı Butonu",
+      "description": "Standart hasta çağrı ünitesi.",
+      "features": [
+        "Antimikrobiyal yüzey",
+        "Kabartmalı Braille butonu",
+        "LED çağrı onayı",
+        "Kolay duvar montajı"
+      ],
+      "specs": {
+        "material": "ABS Beyaz Plastik",
+        "frequency": "433.3 MHz",
+        "range": "100m'ye kadar (Açık alan)",
+        "battery": "CR2032 Lityum",
+        "weight": "70g",
+        "dimensions": "84 x 84 x 33 mm"
+      }
+    },
+    "handset-call-button": {
+      "name": "El Seti Çağrı Butonu",
+      "description": "Ergonomik hasta el seti.",
+      "features": [
+        "Antimikrobiyal yüzey",
+        "Daha kolay kullanım için 1,5 m spiral kablo",
+        "LED çağrı onayı",
+        "Soketli kolay duvar montajı"
+      ],
+      "specs": {
+        "material": "ABS Beyaz Plastik",
+        "frequency": "433.3 MHz",
+        "range": "100m'ye kadar (Açık alan)",
+        "power": "Yatak Başı Butonuna Bağlı",
+        "weight": "92g",
+        "dimensions": "44 x 131 x 24 mm"
+      }
+    },
+    "pullcord-call-button": {
+      "name": "İpli Çağrı Butonu",
+      "description": "Banyolar için acil ipli çağrı butonu.",
+      "features": [
+        "Antimikrobiyal yüzey",
+        "Daha kolay hasta kullanımı için ipli çekme mekanizması",
+        "Çağrı ve iptal fonksiyonları için kasa üzerinde butonlar",
+        "LED çağrı onayı",
+        "Kolay duvar montajı"
+      ],
+      "specs": {
+        "material": "ABS Beyaz Plastik",
+        "frequency": "433.3 MHz",
+        "range": "100m'ye kadar (Açık alan)",
+        "battery": "CR2032 Lityum",
+        "weight": "88g",
+        "dimensions": "84 x 84 x 33 mm"
+      }
+    },
+    "codeblue-call-button": {
+      "name": "Mavi Kod Butonu",
+      "description": "Kritik acil durum uyarı butonu.",
+      "features": [
+        "Antimikrobiyal yüzey",
+        "Tek butonlu dairesel kasa",
+        "Kolay kullanım",
+        "LED çağrı onayı",
+        "Kolay duvar montajı"
+      ],
+      "specs": {
+        "material": "ABS Beyaz Plastik",
+        "frequency": "433.3 MHz",
+        "range": "100m'ye kadar (Açık alan)",
+        "battery": "CR2032 Lityum",
+        "weight": "40g",
+        "dimensions": "75 x 75 x 22 mm"
+      }
+    },
+    "over-door-lamp": {
+      "name": "Kapı Üstü Uyarı Lambası",
+      "description": "Oda durumu için görsel gösterge.",
+      "features": [
+        "Yüksek kaliteli ABS plastik kasa",
+        "4 tip renk seçeneği",
+        "Kolay fark edilebilir",
+        "Her çağrıda sesli uyarı",
+        "Kolay duvar montajı"
+      ],
+      "specs": {
+        "material": "ABS Beyaz Plastik",
+        "frequency": "433.3 MHz",
+        "range": "100m'ye kadar (Açık alan)",
+        "power": "220V",
+        "weight": "140g",
+        "dimensions": "85 x 85 x 38 mm"
+      }
+    },
+    "signal-repeater": {
+      "name": "Sinyal Tekrarlayıcı",
+      "description": "Kablosuz kapsama alanını genişletir.",
+      "features": [
+        "İletişim menzilini genişletir",
+        "Diğer ağlarla parazit yapmaz",
+        "Kolay kullanım",
+        "Alınan çağrılar için LED durum onayı",
+        "Kolay duvar montajı"
+      ],
+      "specs": {
+        "material": "ABS Beyaz Plastik",
+        "frequency": "433.3 MHz",
+        "range": "100m'ye kadar (Açık alan)",
+        "power": "220V",
+        "weight": "140g",
+        "dimensions": "85 x 85 x 38 mm"
+      }
+    },
+    "pager-transmitter": {
+      "name": "Çağrı Vericisi",
+      "description": "Personel çağrı cihazlarına (pager) uyarı gönderir.",
+      "features": [
+        "Uzun menzil için anten",
+        "RS232 iletişimi",
+        "Kolay kullanım",
+        "LED durum onayı",
+        "Kolay duvar montajı"
+      ],
+      "specs": {
+        "material": "Alüminyum Alaşım",
+        "frequency": "433.3 MHz",
+        "range": "100m'ye kadar (Açık alan)",
+        "power": "Verici ile birlikte güç kaynağı kullanarak 220V",
+        "weight": "230g",
+        "dimensions": "84 x 97 x 24 mm"
+      }
+    },
+    "pager": {
+      "name": "Çağrı Cihazı (Pager)",
+      "description": "Personel için kişisel uyarı cihazı.",
+      "features": [
+        "Çağrılar için yüksek sesli uyarılar",
+        "16 karakterli çağrı bildirimi",
+        "Çoklu dil desteği",
+        "Kolay kullanım",
+        "Kolay taşıma klipsi"
+      ],
+      "specs": {
+        "material": "ABS Siyah Plastik",
+        "frequency": "433.3 MHz",
+        "range": "150m'ye kadar (Açık alan)",
+        "battery": "1.5V AAA",
+        "weight": "68g",
+        "dimensions": "76 x 53 x 18 mm"
+      }
+    },
+    "ip-nurse-station": {
+      "name": "Hemşire İstasyon Konsolu",
+      "description": "Çağrı yönetimi için dokunmatik IP konsolu."
+    },
+    "ip-room-unit": {
+      "name": "Oda Kontrol Ünitesi",
+      "description": "Akıllı oda yönetim modülü."
+    },
+    "ip-call-reset": {
+      "name": "Çağrı ve İptal Butonu",
+      "description": "Entegre çağrı ve iptal ünitesi."
+    },
+    "ip-handset": {
+      "name": "El Seti Çağrı Butonu",
+      "description": "IP tabanlı hasta el seti."
+    },
+    "ip-wc-pullcord": {
+      "name": "WC İpli Çağrı Butonu",
+      "description": "IP acil durum ipli çağrı butonu."
+    },
+    "ip-warning-lamp": {
+      "name": "Uyarı Lambası",
+      "description": "Çok renkli IP durum göstergesi."
+    },
+    "ip-server": {
+      "name": "Hastane Çağrı Sistemi Sunucusu",
+      "description": "Merkezi yönetim yazılımı ve sunucusu."
+    },
+    "analog-display": {
+      "name": "Hemşire Çağrı Paneli",
+      "description": "Geleneksel LED çağrı göstergesi."
+    },
+    "analog-bedside": {
+      "name": "Yatak Başı Çağrı Butonu",
+      "description": "Kablolu yatak başı çağrı ünitesi."
+    },
+    "analog-handle": {
+      "name": "El Seti Çağrı Butonu",
+      "description": "Geleneksel hasta el seti."
+    },
+    "analog-reset": {
+      "name": "İptal Butonu",
+      "description": "Manuel çağrı iptal ünitesi."
+    },
+    "analog-pullcord": {
+      "name": "Acil İpli Çağrı Butonu",
+      "description": "Kablolu acil ipli çağrı butonu."
+    },
+    "analog-corridor": {
+      "name": "Koridor Lambası",
+      "description": "Basit görsel oda göstergesi."
+    },
+    "analog-room-unit": {
+      "name": "Oda Kontrol Ünitesi",
+      "description": "Analog oda kontrol modülü."
+    },
+    "analog-extender": {
+      "name": "Menzil Genişletici Modül",
+      "description": "Uzun kablo hatları için sinyal güçlendirici."
+    }
+  }
+}

@@ -3,16 +3,18 @@ import { motion } from 'motion/react';
 import { CATEGORIES } from '../../constants';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import { useTranslation } from '../../contexts/LanguageContext';
 
 export default function ProductGrid() {
+  const { t } = useTranslation();
+
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="section-title">Our Core Systems</h2>
+          <h2 className="section-title">{t('home.core_systems_title')}</h2>
           <p className="section-subtitle mx-auto">
-            Comprehensive communication and monitoring solutions designed for 
-            reliability and ease of use in professional environments.
+            {t('home.core_systems_subtitle')}
           </p>
         </div>
 
@@ -29,15 +31,17 @@ export default function ProductGrid() {
               <div className="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 group-hover:bg-randa-blue group-hover:text-white transition-colors">
                 {React.createElement(cat.subcategories[0].icon, { className: "w-7 h-7" })}
               </div>
-              <h3 className="text-xl font-bold text-zinc-900 mb-3">{cat.name}</h3>
+              <h3 className="text-xl font-bold text-zinc-900 mb-3">
+                {t(`navbar.${cat.id}`) !== `navbar.${cat.id}` ? t(`navbar.${cat.id}`) : cat.name}
+              </h3>
               <p className="text-zinc-600 text-sm leading-relaxed mb-6">
-                {cat.description}
+                {t(`categories.${cat.id}-desc`) !== `categories.${cat.id}-desc` ? t(`categories.${cat.id}-desc`) : cat.description}
               </p>
               <div className="space-y-3 mb-8">
                 {cat.subcategories.slice(0, 3).map(sub => (
                   <div key={sub.id} className="flex items-center text-xs font-semibold text-zinc-500">
                     <div className="w-1.5 h-1.5 rounded-full bg-randa-blue/40 mr-2" />
-                    {sub.name}
+                    {t(`subcategories.${sub.id}`) !== `subcategories.${sub.id}` ? t(`subcategories.${sub.id}`) : sub.name}
                   </div>
                 ))}
               </div>
@@ -45,7 +49,7 @@ export default function ProductGrid() {
                 to={`/category/${cat.id}`} 
                 className="inline-flex items-center text-sm font-bold text-randa-blue hover:underline"
               >
-                <span>View Details</span>
+                <span>{t('home.view_details')}</span>
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </motion.div>
