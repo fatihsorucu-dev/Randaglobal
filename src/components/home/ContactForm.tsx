@@ -26,17 +26,31 @@ export default function ContactForm() {
     }
   }, [location.state]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     
-    // Simulate API call
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        console.error('Failed to send message');
+        // You could add an error state here to show to the user
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-      // In a real app, this would be an API call to a backend that sends the email
-      console.log('Sending email to info@randa.com.tr', formData);
-    }, 1500);
+    }
   };
 
   return (
