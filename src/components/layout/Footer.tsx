@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Linkedin, Youtube, Mail, MapPin, Phone, Instagram } from 'lucide-react';
 import { LOGO_PATH, COMPANY_NAME, CONTACT_INFO, SOCIAL_LINKS } from '../../constants';
+import { useTranslation } from '../../contexts/LanguageContext';
 
 export default function Footer() {
+  const { t } = useTranslation();
   const [logoError, setLogoError] = useState(false);
 
-  const companyNameParts = COMPANY_NAME.split(' ');
+  const translatedCompanyName = t('common.company_name') !== 'common.company_name' ? t('common.company_name') : COMPANY_NAME;
+  const companyNameParts = translatedCompanyName.split(' ');
   const firstName = companyNameParts[0];
   const secondName = companyNameParts.slice(1).join(' ');
 
@@ -21,24 +24,23 @@ export default function Footer() {
                 <img 
                   src={LOGO_PATH} 
                   alt={COMPANY_NAME} 
-                  className="h-10 w-auto brightness-0 invert"
+                  className="h-12 w-auto brightness-0 invert"
                   onError={() => setLogoError(true)}
                 />
               ) : (
                 <div className="flex items-center space-x-2">
-                  <div className="w-10 h-10 bg-randa-blue rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                  <div className="w-12 h-12 bg-randa-blue rounded-lg flex items-center justify-center text-white font-bold text-xl">
                     {firstName[0]}
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-xl font-bold tracking-tight text-white uppercase">{firstName}</span>
-                    <span className="text-[10px] uppercase tracking-[0.2em] text-zinc-500 -mt-1 font-semibold">{secondName}</span>
+                    <span className="text-2xl font-bold tracking-tight text-white uppercase leading-none">{firstName}</span>
+                    <span className="text-[11px] uppercase tracking-[0.2em] text-zinc-500 font-semibold">{secondName}</span>
                   </div>
                 </div>
               )}
             </Link>
             <p className="text-sm leading-relaxed">
-              Established in 1998, {COMPANY_NAME} is a leading provider of digital call systems. 
-              We specialize in R&D, design, and manufacturing of high-quality solutions under our registered trademark Digimat.
+              {t('footer.brand_desc')}
             </p>
             <div className="flex space-x-4">
               <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-randa-blue transition-colors"><Facebook className="w-5 h-5" /></a>
@@ -50,31 +52,31 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-bold mb-6">Quick Links</h4>
+            <h4 className="text-white font-bold mb-6">{t('footer.quick_links')}</h4>
             <ul className="space-y-4 text-sm">
-              <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
-              <li><a href="#" className="hover:text-white transition-colors">Documents</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">References</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Career</a></li>
+              <li><Link to="/about" className="hover:text-white transition-colors">{t('navbar.about')}</Link></li>
+              <li><Link to="/contact" className="hover:text-white transition-colors">{t('navbar.contact')}</Link></li>
+              <li><Link to="/documents" className="hover:text-white transition-colors">{t('navbar.documents')}</Link></li>
+              <li><Link to="/references" className="hover:text-white transition-colors">{t('navbar.references')}</Link></li>
+              <li><Link to="/career" className="hover:text-white transition-colors">{t('navbar.career')}</Link></li>
             </ul>
           </div>
 
           {/* Products */}
           <div>
-            <h4 className="text-white font-bold mb-6">Our Systems</h4>
+            <h4 className="text-white font-bold mb-6">{t('footer.our_systems')}</h4>
             <ul className="space-y-4 text-sm">
-              <li><Link to="/category/nurse-call" className="hover:text-white transition-colors">Nurse Call Systems</Link></li>
-              <li><Link to="/category/disabled-toilet" className="hover:text-white transition-colors">Disabled Toilet Alarms</Link></li>
-              <li><Link to="/category/wireless-paging" className="hover:text-white transition-colors">Wireless Paging</Link></li>
-              <li><Link to="/category/queue-systems" className="hover:text-white transition-colors">Queue Management</Link></li>
-              <li><Link to="/category/clock-systems" className="hover:text-white transition-colors">Synchronized Clocks</Link></li>
+              <li><Link to="/category/nurse-call" className="hover:text-white transition-colors">{t('navbar.nurse-call')}</Link></li>
+              <li><Link to="/category/disabled-toilet" className="hover:text-white transition-colors">{t('navbar.disabled-toilet')}</Link></li>
+              <li><Link to="/category/wireless-paging" className="hover:text-white transition-colors">{t('navbar.wireless-paging')}</Link></li>
+              <li><Link to="/category/queue-systems" className="hover:text-white transition-colors">{t('navbar.queue-systems')}</Link></li>
+              <li><Link to="/category/clock-systems" className="hover:text-white transition-colors">{t('navbar.clock-systems')}</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="text-white font-bold mb-6">Contact Info</h4>
+            <h4 className="text-white font-bold mb-6">{t('footer.contact_info')}</h4>
             <ul className="space-y-4 text-sm">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-randa-blue shrink-0" />
@@ -84,7 +86,7 @@ export default function Footer() {
                 <Phone className="w-5 h-5 text-randa-blue shrink-0" />
                 <div className="flex flex-col">
                   <span>{CONTACT_INFO.phone}</span>
-                  <span className="text-xs text-zinc-500">Support: {CONTACT_INFO.support}</span>
+                  <span className="text-xs text-zinc-500">{t('contact.support')}: {CONTACT_INFO.support}</span>
                 </div>
               </li>
               <li className="flex items-center space-x-3">
@@ -96,7 +98,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-zinc-800 text-center text-xs">
-          <p>&copy; {new Date().getFullYear()} {COMPANY_NAME}. All Rights Reserved. | Digimat Digital Call Systems</p>
+          <p>&copy; {new Date().getFullYear()} {COMPANY_NAME}. {t('footer.rights_reserved')}</p>
         </div>
       </div>
     </footer>

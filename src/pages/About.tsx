@@ -2,8 +2,11 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { History, Target, Eye, Award } from 'lucide-react';
 import { COMPANY_NAME } from '../constants';
+import { useTranslation } from '../contexts/LanguageContext';
 
 export default function About() {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -15,13 +18,11 @@ export default function About() {
         {/* Hero */}
         <div className="text-center mb-24">
           <h1 className="text-5xl md:text-7xl font-bold text-zinc-900 mb-8 tracking-tight">
-            Crafting Excellence in <br />
-            <span className="text-randa-blue">Digital Communication.</span>
+            {t('about.hero_title_1')} <br />
+            <span className="text-randa-blue">{t('about.hero_title_2')}</span>
           </h1>
           <p className="text-xl text-zinc-600 max-w-3xl mx-auto leading-relaxed">
-            Since 1998, {COMPANY_NAME} has been at the forefront of designing and 
-            manufacturing advanced call systems that empower healthcare professionals 
-            and service providers.
+            {t('about.hero_subtitle')}
           </p>
         </div>
 
@@ -44,27 +45,17 @@ export default function About() {
           <div>
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-randa-blue/10 border border-randa-blue/20 text-randa-blue text-xs font-bold uppercase tracking-wider mb-6">
               <History className="w-3 h-3" />
-              <span>Our Journey</span>
+              <span>{t('about.story_badge')}</span>
             </div>
-            <h2 className="text-4xl font-bold text-zinc-900 mb-6">A Legacy of Innovation</h2>
+            <h2 className="text-4xl font-bold text-zinc-900 mb-6">{t('about.story_title')}</h2>
             <p className="text-lg text-zinc-600 mb-6 leading-relaxed">
-              {COMPANY_NAME} was founded with a clear vision: to bridge the gap 
-              between technology and human needs in critical environments. Over the 
-              past two decades, we have evolved from a small R&D boutique to a 
-              globally recognized manufacturer.
+              {t('about.story_p1')}
             </p>
             <p className="text-lg text-zinc-600 mb-6 leading-relaxed">
-              Our expertise lies in the development of sophisticated communication 
-              infrastructures that ensure safety and efficiency in healthcare, 
-              hospitality, and industrial sectors. We take pride in our in-house 
-              R&D capabilities, allowing us to stay ahead of industry trends and 
-              deliver bespoke solutions to our clients.
+              {t('about.story_p2')}
             </p>
             <p className="text-lg text-zinc-600 leading-relaxed">
-              Our registered trademark, <strong>Digimat</strong>, has become 
-              synonymous with reliability in hospitals, nursing homes, and 
-              public facilities across multiple continents. We are committed to 
-              continuous improvement and excellence in everything we do.
+              {t('about.story_p3')}
             </p>
           </div>
         </div>
@@ -75,30 +66,27 @@ export default function About() {
             <div className="w-14 h-14 bg-randa-blue/10 rounded-2xl flex items-center justify-center text-randa-blue mb-8">
               <Target className="w-7 h-7" />
             </div>
-            <h3 className="text-2xl font-bold text-zinc-900 mb-4">Our Mission</h3>
+            <h3 className="text-2xl font-bold text-zinc-900 mb-4">{t('about.mission_title')}</h3>
             <p className="text-zinc-600 leading-relaxed">
-              To provide state-of-the-art digital communication solutions that 
-              enhance safety, efficiency, and comfort in professional environments.
+              {t('about.mission_desc')}
             </p>
           </div>
           <div className="p-10 rounded-[40px] bg-zinc-900 text-white shadow-xl shadow-zinc-900/20">
             <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-randa-blue mb-8">
               <Eye className="w-7 h-7" />
             </div>
-            <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
+            <h3 className="text-2xl font-bold mb-4">{t('about.vision_title')}</h3>
             <p className="text-zinc-400 leading-relaxed">
-              To be the global leader in digital call systems, setting new 
-              benchmarks for quality, innovation, and user-centric design.
+              {t('about.vision_desc')}
             </p>
           </div>
           <div className="p-10 rounded-[40px] bg-white border border-zinc-100 shadow-xl shadow-zinc-200/50">
             <div className="w-14 h-14 bg-randa-blue/10 rounded-2xl flex items-center justify-center text-randa-blue mb-8">
               <Award className="w-7 h-7" />
             </div>
-            <h3 className="text-2xl font-bold text-zinc-900 mb-4">Our Values</h3>
+            <h3 className="text-2xl font-bold text-zinc-900 mb-4">{t('about.values_title')}</h3>
             <p className="text-zinc-600 leading-relaxed">
-              Integrity, innovation, and unwavering commitment to customer 
-              satisfaction are the pillars of everything we build.
+              {t('about.values_desc')}
             </p>
           </div>
         </div>

@@ -3,8 +3,10 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Mail, Phone, MapPin, Send, CheckCircle2 } from 'lucide-react';
 import { CONTACT_INFO } from '../../constants';
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from '../../contexts/LanguageContext';
 
 export default function ContactForm() {
+  const { t } = useTranslation();
   const location = useLocation();
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -44,10 +46,9 @@ export default function ContactForm() {
           <div className="grid lg:grid-cols-2">
             {/* Info Side */}
             <div className="bg-zinc-900 p-12 lg:p-20 text-white">
-              <h2 className="text-4xl font-bold mb-8">Get in Touch</h2>
+              <h2 className="text-4xl font-bold mb-8">{t('contact.title')}</h2>
               <p className="text-zinc-400 mb-12 leading-relaxed">
-                Have a project in mind or need technical support? Our team of 
-                experts is ready to assist you with your digital call system needs.
+                {t('contact.subtitle')}
               </p>
 
               <div className="space-y-8">
@@ -56,9 +57,9 @@ export default function ContactForm() {
                     <Phone className="w-6 h-6 text-randa-blue" />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-zinc-500 uppercase tracking-widest mb-1">Call Us</div>
+                    <div className="text-sm font-bold text-zinc-500 uppercase tracking-widest mb-1">{t('contact.call_us')}</div>
                     <div className="text-lg font-semibold">{CONTACT_INFO.phone}</div>
-                    <div className="text-xs text-zinc-500 mt-1">Support: {CONTACT_INFO.support}</div>
+                    <div className="text-xs text-zinc-500 mt-1">{t('contact.support')}: {CONTACT_INFO.support}</div>
                   </div>
                 </div>
 
@@ -67,7 +68,7 @@ export default function ContactForm() {
                     <Mail className="w-6 h-6 text-randa-blue" />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-zinc-500 uppercase tracking-widest mb-1">Email Us</div>
+                    <div className="text-sm font-bold text-zinc-500 uppercase tracking-widest mb-1">{t('contact.email_us')}</div>
                     <div className="text-lg font-semibold">{CONTACT_INFO.email}</div>
                   </div>
                 </div>
@@ -77,7 +78,7 @@ export default function ContactForm() {
                     <MapPin className="w-6 h-6 text-randa-blue" />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-zinc-500 uppercase tracking-widest mb-1">Visit Us</div>
+                    <div className="text-sm font-bold text-zinc-500 uppercase tracking-widest mb-1">{t('contact.visit_us')}</div>
                     <div className="text-lg font-semibold leading-tight">{CONTACT_INFO.address}</div>
                   </div>
                 </div>
@@ -97,48 +98,48 @@ export default function ContactForm() {
                     <form className="space-y-6" onSubmit={handleSubmit}>
                       <div className="grid md:grid-cols-2 gap-6">
                         <div>
-                          <label className="block text-sm font-bold text-zinc-700 mb-2">Full Name</label>
+                          <label className="block text-sm font-bold text-zinc-700 mb-2">{t('contact.form_name')}</label>
                           <input 
                             required
                             type="text" 
                             value={formData.name}
                             onChange={e => setFormData({...formData, name: e.target.value})}
                             className="w-full px-4 py-3 rounded-xl border border-zinc-200 focus:border-randa-blue focus:ring-4 focus:ring-randa-blue/10 outline-none transition-all"
-                            placeholder="John Doe"
+                            placeholder={t('contact.form_name_placeholder')}
                           />
                         </div>
                         <div>
-                          <label className="block text-sm font-bold text-zinc-700 mb-2">Email Address</label>
+                          <label className="block text-sm font-bold text-zinc-700 mb-2">{t('contact.form_email')}</label>
                           <input 
                             required
                             type="email" 
                             value={formData.email}
                             onChange={e => setFormData({...formData, email: e.target.value})}
                             className="w-full px-4 py-3 rounded-xl border border-zinc-200 focus:border-randa-blue focus:ring-4 focus:ring-randa-blue/10 outline-none transition-all"
-                            placeholder="john@example.com"
+                            placeholder={t('contact.form_email_placeholder')}
                           />
                         </div>
                       </div>
                       <div>
-                        <label className="block text-sm font-bold text-zinc-700 mb-2">Subject</label>
+                        <label className="block text-sm font-bold text-zinc-700 mb-2">{t('contact.form_subject')}</label>
                         <input 
                           required
                           type="text" 
                           value={formData.subject}
                           onChange={e => setFormData({...formData, subject: e.target.value})}
                           className="w-full px-4 py-3 rounded-xl border border-zinc-200 focus:border-randa-blue focus:ring-4 focus:ring-randa-blue/10 outline-none transition-all"
-                          placeholder="Inquiry about Nurse Call Systems"
+                          placeholder={t('contact.form_subject_placeholder')}
                         />
                       </div>
                       <div>
-                        <label className="block text-sm font-bold text-zinc-700 mb-2">Message</label>
+                        <label className="block text-sm font-bold text-zinc-700 mb-2">{t('contact.form_message')}</label>
                         <textarea 
                           required
                           rows={4}
                           value={formData.message}
                           onChange={e => setFormData({...formData, message: e.target.value})}
                           className="w-full px-4 py-3 rounded-xl border border-zinc-200 focus:border-randa-blue focus:ring-4 focus:ring-randa-blue/10 outline-none transition-all resize-none"
-                          placeholder="Tell us about your requirements..."
+                          placeholder={t('contact.form_message_placeholder')}
                         />
                       </div>
                       <button 
@@ -149,7 +150,7 @@ export default function ContactForm() {
                           <div className="w-6 h-6 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                         ) : (
                           <>
-                            <span>Send Message</span>
+                            <span>{t('contact.form_send')}</span>
                             <Send className="w-5 h-5" />
                           </>
                         )}
@@ -166,16 +167,15 @@ export default function ContactForm() {
                     <div className="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mb-6">
                       <CheckCircle2 className="w-10 h-10" />
                     </div>
-                    <h3 className="text-3xl font-bold text-zinc-900 mb-4">Message Sent!</h3>
+                    <h3 className="text-3xl font-bold text-zinc-900 mb-4">{t('contact.success_title')}</h3>
                     <p className="text-zinc-600 max-w-sm mb-8">
-                      Thank you for contacting us. Your message has been sent to info@randa.com.tr. 
-                      Our team will get back to you shortly.
+                      {t('contact.success_desc')}
                     </p>
                     <button 
                       onClick={() => setSubmitted(false)}
                       className="text-randa-blue font-bold hover:underline"
                     >
-                      Send another message
+                      {t('contact.send_another')}
                     </button>
                   </motion.div>
                 )}

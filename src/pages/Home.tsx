@@ -4,8 +4,11 @@ import ProductGrid from '../components/home/ProductGrid';
 import ContactForm from '../components/home/ContactForm';
 import { motion } from 'motion/react';
 import { Shield, Award, Users, HeartPulse } from 'lucide-react';
+import { useTranslation } from '../contexts/LanguageContext';
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -23,8 +26,8 @@ export default function Home() {
                 <Shield className="w-6 h-6" />
               </div>
               <div>
-                <div className="text-sm font-bold text-zinc-900">Certified</div>
-                <div className="text-xs text-zinc-500">ISO 9001:2015</div>
+                <div className="text-sm font-bold text-zinc-900">{t('home.trust_certified')}</div>
+                <div className="text-xs text-zinc-500">{t('home.trust_certified_desc')}</div>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -32,8 +35,8 @@ export default function Home() {
                 <Award className="w-6 h-6" />
               </div>
               <div>
-                <div className="text-sm font-bold text-zinc-900">Award Winning</div>
-                <div className="text-xs text-zinc-500">R&D Excellence</div>
+                <div className="text-sm font-bold text-zinc-900">{t('home.trust_award')}</div>
+                <div className="text-xs text-zinc-500">{t('home.trust_award_desc')}</div>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -41,8 +44,8 @@ export default function Home() {
                 <Users className="w-6 h-6" />
               </div>
               <div>
-                <div className="text-sm font-bold text-zinc-900">Expert Team</div>
-                <div className="text-xs text-zinc-500">In-house R&D</div>
+                <div className="text-sm font-bold text-zinc-900">{t('home.trust_team')}</div>
+                <div className="text-xs text-zinc-500">{t('home.trust_team_desc')}</div>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -50,8 +53,8 @@ export default function Home() {
                 <HeartPulse className="w-6 h-6" />
               </div>
               <div>
-                <div className="text-sm font-bold text-zinc-900">Healthcare</div>
-                <div className="text-xs text-zinc-500">Specialized Focus</div>
+                <div className="text-sm font-bold text-zinc-900">{t('home.trust_healthcare')}</div>
+                <div className="text-xs text-zinc-500">{t('home.trust_healthcare_desc')}</div>
               </div>
             </div>
           </div>

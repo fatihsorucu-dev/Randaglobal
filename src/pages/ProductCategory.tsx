@@ -3,8 +3,10 @@ import { useParams, useLocation, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { CATEGORIES } from '../constants';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
+import { useTranslation } from '../contexts/LanguageContext';
 
 export default function ProductCategory() {
+  const { t } = useTranslation();
   const { categoryId } = useParams();
   const location = useLocation();
   const category = CATEGORIES.find(c => c.id === categoryId);
@@ -32,9 +34,11 @@ export default function ProductCategory() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold text-zinc-900 mb-6">{category.name}</h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-zinc-900 mb-6">
+            {t(`navbar.${category.id}`) !== `navbar.${category.id}` ? t(`navbar.${category.id}`) : category.name}
+          </h1>
           <p className="text-xl text-zinc-600 max-w-3xl leading-relaxed">
-            {category.description}
+            {t(`categories.${category.id}-desc`) !== `categories.${category.id}-desc` ? t(`categories.${category.id}-desc`) : category.description}
           </p>
         </div>
 
@@ -49,10 +53,11 @@ export default function ProductCategory() {
                 <div className="w-16 h-16 bg-randa-blue/10 rounded-2xl flex items-center justify-center text-randa-blue mb-8">
                   <sub.icon className="w-8 h-8" />
                 </div>
-                <h2 className="text-3xl font-bold text-zinc-900 mb-6">{sub.name}</h2>
+                <h2 className="text-3xl font-bold text-zinc-900 mb-6">
+                  {t(`subcategories.${sub.id}`) !== `subcategories.${sub.id}` ? t(`subcategories.${sub.id}`) : sub.name}
+                </h2>
                 <p className="text-lg text-zinc-600 mb-8 leading-relaxed">
-                  {sub.description} Our {sub.name} solutions are engineered for maximum reliability 
-                  and seamless integration into your existing infrastructure.
+                  {t(`subcategories.${sub.id}-desc`) !== `subcategories.${sub.id}-desc` ? t(`subcategories.${sub.id}-desc`) : sub.description}
                 </p>
                 
                 <div className="grid sm:grid-cols-2 gap-4 mb-10">
@@ -68,7 +73,7 @@ export default function ProductCategory() {
                   to={`/category/${category.id}/subcategory/${sub.id}`}
                   className="px-8 py-4 bg-zinc-900 text-white rounded-2xl font-bold hover:bg-zinc-800 transition-all inline-flex items-center space-x-2"
                 >
-                  <span>View All Products</span>
+                  <span>{t('home.view_details')}</span>
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>

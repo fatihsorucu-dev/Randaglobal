@@ -1,13 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Building2, MapPin, FileText, Download, ChevronRight } from 'lucide-react';
-import { REFERENCES, REFERENCE_PDF_URL } from '../constants';
+import { REFERENCES, REFERENCE_PDF_URLS } from '../constants';
+import { useTranslation } from '../contexts/LanguageContext';
 
 export default function References() {
-  const categories = Array.from(new Set(REFERENCES.map(ref => ref.category)));
+  const { t, currentLocale } = useTranslation();
+  
+  const filteredByLang = REFERENCES.filter(ref => !ref.lang || ref.lang === currentLocale);
+  const categories = Array.from(new Set(filteredByLang.map(ref => ref.category)));
+  
   const [activeCategory, setActiveCategory] = useState(categories[0]);
 
-  const filteredRefs = REFERENCES.filter(ref => ref.category === activeCategory);
+  // Reset active category if it's not in the new categories list
+  useEffect(() => {
+    if (!categories.includes(activeCategory)) {
+      setActiveCategory(categories[0]);
+    }
+  }, [currentLocale, categories]);
+
+  const filteredRefs = filteredByLang.filter(ref => ref.category === activeCategory);
+  const referencePdfUrl = REFERENCE_PDF_URLS[currentLocale] || REFERENCE_PDF_URLS['en'];
 
   return (
     <motion.div
@@ -19,22 +32,21 @@ export default function References() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-7xl font-bold text-zinc-900 mb-8 tracking-tight">
-            Our <span className="text-randa-blue">References.</span>
+            {t('common.our_references').split(' ')[0]} <span className="text-randa-blue">{t('common.our_references').split(' ').slice(1).join(' ')}</span>
           </h1>
           <p className="text-xl text-zinc-600 max-w-2xl mx-auto leading-relaxed mb-8">
-            Trusted by leading institutions worldwide for critical communication 
-            infrastructure.
+            {t('common.our_references_desc')}
           </p>
           
           {/* PDF Download Button */}
           <a 
-            href={REFERENCE_PDF_URL}
+            href={referencePdfUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-3 px-8 py-4 bg-zinc-900 text-white rounded-2xl font-bold hover:bg-zinc-800 transition-all shadow-xl shadow-zinc-900/20 group"
           >
             <FileText className="w-5 h-5 text-randa-blue" />
-            <span>Download Reference List (PDF)</span>
+            <span>{t('common.download_reference_list')}</span>
             <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform" />
           </a>
         </div>
@@ -43,7 +55,7 @@ export default function References() {
           {/* Sidebar */}
           <div className="lg:w-1/4">
             <div className="bg-white rounded-[32px] p-6 border border-zinc-100 shadow-xl shadow-zinc-200/50 sticky top-32">
-              <h3 className="text-xs font-bold text-zinc-400 uppercase tracking-widest mb-6 px-4">Categories</h3>
+              <h3 className="text-xs font-bold text-zinc-400 uppercase tracking-widest mb-6 px-4">{t('footer.quick_links')}</h3>
               <nav className="space-y-2">
                 {categories.map((category) => (
                   <button

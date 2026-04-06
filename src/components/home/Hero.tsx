@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, ShieldCheck, Zap, Globe } from 'lucide-react';
+import { ArrowRight, ShieldCheck, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from '../../contexts/LanguageContext';
 
 export default function Hero() {
+  const { t } = useTranslation();
   return (
     <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
       {/* Background elements */}
@@ -21,40 +23,39 @@ export default function Hero() {
           >
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-randa-blue/10 border border-randa-blue/20 text-randa-blue text-xs font-bold uppercase tracking-wider mb-6">
               <Zap className="w-3 h-3" />
-              <span>Innovating Since 1998</span>
+              <span>{t('home.hero_badge')}</span>
             </div>
             <h1 className="text-5xl lg:text-7xl font-bold tracking-tight text-zinc-900 leading-[1.1] mb-6">
-              Digital Call Systems for <span className="text-randa-blue">Critical</span> Environments.
+              {t('home.hero_title')}
             </h1>
             <p className="text-lg text-zinc-600 mb-10 max-w-lg leading-relaxed">
-              From IP Nurse Call systems to synchronized master clocks, we provide 
-              the infrastructure that keeps healthcare and service sectors running smoothly.
+              {t('home.hero_subtitle')}
             </p>
             
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <Link to="/category/nurse-call" className="px-8 py-4 bg-randa-blue text-white rounded-2xl font-bold hover:bg-randa-blue/90 transition-all shadow-xl shadow-randa-blue/25 flex items-center justify-center space-x-2 group">
-                <span>Explore Systems</span>
+                <span>{t('home.hero_cta_explore')}</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link to="/about" className="px-8 py-4 bg-white text-zinc-900 border border-zinc-200 rounded-2xl font-bold hover:bg-stone-50 transition-all flex items-center justify-center">
-                Learn More
+                {t('home.hero_cta_learn')}
               </Link>
             </div>
 
             <div className="mt-12 flex items-center space-x-8">
               <div className="flex flex-col">
                 <span className="text-2xl font-bold text-zinc-900">750+</span>
-                <span className="text-xs text-zinc-500 uppercase font-bold tracking-wider">Projects</span>
+                <span className="text-xs text-zinc-500 uppercase font-bold tracking-wider">{t('home.hero_stats_projects')}</span>
               </div>
               <div className="w-px h-8 bg-zinc-200" />
               <div className="flex flex-col">
                 <span className="text-2xl font-bold text-zinc-900">25+</span>
-                <span className="text-xs text-zinc-500 uppercase font-bold tracking-wider">Years</span>
+                <span className="text-xs text-zinc-500 uppercase font-bold tracking-wider">{t('home.hero_stats_years')}</span>
               </div>
               <div className="w-px h-8 bg-zinc-200" />
               <div className="flex flex-col">
                 <span className="text-2xl font-bold text-zinc-900">Global</span>
-                <span className="text-xs text-zinc-500 uppercase font-bold tracking-wider">Reach</span>
+                <span className="text-xs text-zinc-500 uppercase font-bold tracking-wider">{t('home.hero_stats_reach')}</span>
               </div>
             </div>
           </motion.div>
@@ -79,9 +80,9 @@ export default function Hero() {
               <div className="absolute bottom-6 left-6 right-6 text-white">
                 <div className="flex items-center space-x-2 mb-2">
                   <ShieldCheck className="w-5 h-5 text-emerald-400" />
-                  <span className="text-sm font-bold uppercase tracking-wider">Certified Reliability</span>
+                  <span className="text-sm font-bold uppercase tracking-wider">{t('home.hero_certified_title')}</span>
                 </div>
-                <p className="text-sm opacity-90">Digimat systems are trusted by leading hospitals worldwide.</p>
+                <p className="text-sm opacity-90">{t('home.hero_certified_desc')}</p>
               </div>
             </div>
             
